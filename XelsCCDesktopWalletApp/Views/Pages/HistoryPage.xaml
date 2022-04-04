@@ -1,0 +1,353 @@
+﻿<Page x:Class="XelsCCDesktopWalletApp.Views.Pages.HistoryPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:XelsCCDesktopWalletApp.Views.Pages"
+      mc:Ignorable="d"       
+      d:DesignHeight="750" d:DesignWidth="750"
+      Title="HistoryPage" Loaded="Page_Loaded">
+
+    <Grid Margin="10 20 5 5" Background="WhiteSmoke">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".09*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Margin="5">
+            <TextBlock Margin="20 0 0 0" FontSize="15" FontWeight="DemiBold" Padding="2" Background="WhiteSmoke">Transaction History</TextBlock>
+        </Border>
+
+        <Border Grid.Row="1"  CornerRadius="5" Background="#ffffff" BorderBrush="Black" BorderThickness="1" Margin="10 0 10 10">
+            <Border.Effect>
+                <DropShadowEffect  Direction="-75" ShadowDepth="2" Opacity="0.8" BlurRadius="25" Color="Black" />
+            </Border.Effect>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height=".1*" />
+                </Grid.RowDefinitions>
+
+
+                <Grid Grid.Row="0">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid x:Name="NoDataGrid" Visibility="Hidden" Grid.Row="0">
+                        <Border Background="White" CornerRadius="15" Height="20" >
+                            <TextBlock Text="Looks like you haven't made any transactions yet." HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" />
+                        </Border>
+
+                    </Grid>
+
+                    <Grid x:Name="HistoryDataGrid" Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Border Margin="0 20"  Grid.Row="0">
+                            <DataGrid x:Name="HistoryListBinding" ItemsSource="{Binding 
+                                observableList}" AutoGenerateColumns="False" IsReadOnly="True" 
+                                      CanUserReorderColumns="False"
+                                      CanUserResizeColumns="False"
+                          CanUserAddRows="False" RowStyle="{DynamicResource MaterialDesignDataGridRow}"
+                           RowHeight="30" HorizontalAlignment="Center" CanUserSortColumns="False" 
+                           HeadersVisibility="None"  
+                           ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
+                            SelectionMode="Extended" EnableColumnVirtualization="False" 
+                            EnableRowVirtualization="False" >
+
+                                <DataGrid.Columns>
+                                    <DataGridTemplateColumn Width="50" >
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Image Source="{Binding Path= TransactionIcon}" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTextColumn Width="100" 
+                                            Binding="{Binding Path=TransactionType}" >
+                                        <DataGridTextColumn.CellStyle>
+                                            <Style>
+                                                <Setter Property="TextBlock.VerticalAlignment" Value="Center"/>
+                                                <Setter Property="TextBlock.HorizontalAlignment" Value="Center"/>
+                                            </Style>
+                                        </DataGridTextColumn.CellStyle>
+                                    </DataGridTextColumn>
+
+                                    <DataGridTextColumn  Width="350" 
+                                            Binding="{Binding Path= AmountWithUnit}" >
+                                        <DataGridTextColumn.CellStyle>
+                                            <Style>
+                                                <Setter Property="TextBlock.VerticalAlignment" Value="Center"/>
+                                                <Setter Property="TextBlock.HorizontalAlignment" Value="Center"/>
+                                            </Style>
+                                        </DataGridTextColumn.CellStyle>
+                                    </DataGridTextColumn>
+                                    <DataGridTextColumn Width="250" 
+                                            Binding="{Binding Path=Timestamp}" >
+                                        <DataGridTextColumn.CellStyle>
+                                            <Style>
+                                                <Setter Property="TextBlock.VerticalAlignment" Value="Center"/>
+                                                <Setter Property="TextBlock.HorizontalAlignment" Value="Center"/>
+                                            </Style>
+                                        </DataGridTextColumn.CellStyle>
+                                    </DataGridTextColumn>
+
+                                    <DataGridTemplateColumn>
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Button  HorizontalAlignment="Center" 
+                                                Content="Details" Click="DetailsButton_Click"  Background="ForestGreen" Height="auto" FontSize="12" Margin="-5" >
+                                                    <Button.Resources>
+                                                        <Style TargetType="{x:Type Border}">
+                                                            <Setter Property="CornerRadius" Value="5"/>
+
+                                                        </Style>
+                                                    </Button.Resources>
+
+                                                </Button>
+                                            </DataTemplate>
+
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn  >
+                                </DataGrid.Columns>
+
+                            </DataGrid>
+                        </Border>
+                    </Grid>
+
+                    <Popup Name="DetailsPopup" Placement="Center"  AllowsTransparency="False" HorizontalAlignment="Center" VerticalAlignment="Top" >
+                        <Border Background="WhiteSmoke" BorderBrush="Green" BorderThickness="2" CornerRadius="10" >
+                            <Grid Width="500"  Height="400">
+                                <Rectangle Width="500" Height="400" Fill="WhiteSmoke"  />
+
+                                <Grid Margin="20 20">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Border Grid.Row="0">
+                                        <Grid>
+                                            <Label Content="Transaction Details" FontSize="15" FontWeight="Bold"   FontFamily="Microsoft YaHei"/>
+                                            <Button Click="HidePopup_Click" Background="WhiteSmoke" Foreground="Red" BorderBrush="Red" VerticalAlignment="Top" HorizontalAlignment="Right" Content="X" >
+
+                                                <Button.Resources>
+                                                    <Style TargetType="{x:Type Border}">
+                                                        <Setter Property="CornerRadius" Value="50"/>
+                                                    </Style>
+                                                </Button.Resources>
+                                            </Button>
+                                        </Grid>
+
+                                    </Border>
+
+                                    <Border Grid.Row="1">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width=".5*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label Grid.Column="0" Content="Type:"   Foreground="#FF615858"    FontSize="14" />
+
+                                            <TextBlock Grid.Column="1" x:Name="TypeTxt" 
+                                     TextWrapping="Wrap"   
+                                      FontSize="14" Foreground="ForestGreen" 
+                                     />
+
+                                        </Grid>
+
+                                    </Border>
+
+                                    <Border Grid.Row="2">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width=".5*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label Grid.Column="0" Content="Total Amount:" Foreground="#FF615858" FontSize="14" Padding="4"/>
+
+                                            <TextBlock Grid.Column="1" x:Name="TotalAmountTxt" Text="TotalAmount" TextWrapping="Wrap"  Padding="4"  FontSize="14" Foreground="#FF615858" />
+
+
+
+                                        </Grid>
+
+                                    </Border>
+
+                                    <Border Grid.Row="3">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width=".5*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label Grid.Column="0" Content="Amount Sent:" Foreground="#FF615858"  FontSize="14" Padding="4"/>
+
+                                            <TextBlock Grid.Column="1" x:Name="AmountSentTxt"  Text="AmountSent" TextWrapping="Wrap" Padding="4" FontSize="14" Foreground="#FF615858" />
+
+                                        </Grid>
+
+                                    </Border>
+
+                                    <Border Grid.Row="4">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width=".5*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Label Grid.Column="0" Content="Fee:" Foreground="#FF615858"  FontSize="14" Padding="4"/>
+
+                                            <TextBlock Grid.Column="1" x:Name="FeeTxt"  Text="Fee" TextWrapping="Wrap" Padding="4"  FontSize="14" Foreground="#FF615858" />
+
+                                        </Grid>
+
+                                    </Border>
+
+                                    <Border Grid.Row="5">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width=".5*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label Grid.Column="0" Content="Date:" Foreground="#FF615858" FontSize="14" Padding="4"/>
+
+                                            <TextBlock Grid.Column="1" x:Name="DateTxt"  Text="Date" TextWrapping="Wrap" Padding="4" FontSize="14" Foreground="#FF615858" 
+                                  />
+
+                                        </Grid>
+
+                                    </Border>
+
+
+                                    <Border Grid.Row="6">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width=".5*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Label Grid.Column="0" Content="Block:" Foreground="#FF615858" FontSize="14" Padding="4"/>
+
+                                            <TextBlock Grid.Column="1" x:Name="BlockTxt"  Text="Block" TextWrapping="Wrap" Padding="4" FontSize="14" Foreground="#FF615858" />
+
+                                        </Grid>
+
+                                    </Border>
+
+                                    <Border Grid.Row="7">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width=".5*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Label Grid.Column="0" Content="Confirmations:" Foreground="#FF615858" FontSize="14" Padding="4"/>
+
+                                            <TextBlock Grid.Column="1" x:Name="ConfirmationsTxt"  Text="Confirmations"
+                                     TextWrapping="Wrap"  Padding="4" 
+                                     FontFamily="Microsoft YaHei Light" FontSize="14" Foreground="ForestGreen" />
+
+                                        </Grid>
+
+                                    </Border>
+
+                                    <Border Grid.Row="8">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width=".6*"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width=".4*"/>
+                                            </Grid.ColumnDefinitions>
+
+
+                                            <Label Grid.Column="0" Content="Transaction ID:" Foreground="#FF615858" FontSize="14" Padding="4"/>
+
+                                            <TextBlock Grid.Column="1" x:Name="TransactionIDTxt"  Text="TransactionID" TextWrapping="Wrap"   Foreground="ForestGreen"  />
+
+                                            <TextBlock Grid.Column="2" x:Name="TransactionIDCopy" >
+                                    <Button  x:Name="CopyButton" Click="Copy_Click" 
+                                Background="White" BorderThickness="1,1,1,1" Foreground="Green" 
+                                Content="Copy" BorderBrush="Green" Margin="8 0 0 0 " >
+                                    <Button.Resources>
+                                        <Style TargetType="{x:Type Border}">
+                                            <Setter Property="CornerRadius" Value="5"/>
+                                        </Style>
+                                    </Button.Resources>
+                                </Button>
+                                            </TextBlock>
+
+                                        </Grid>
+
+                                    </Border>
+                                    <Border  x:Name="CopyMessage" Visibility="Collapsed" Grid.Row="9" BorderBrush="White" BorderThickness="2" Background="Green" CornerRadius="7">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <TextBlock Grid.Column="0"  Text="The Transaction ID has been copied to your clipboard" TextWrapping="Wrap"   Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                                        </Grid>
+
+                                    </Border>
+                                </Grid>
+                            </Grid>
+                        </Border>
+                    </Popup>
+
+                </Grid>
+
+
+                <Grid x:Name="Pagination" HorizontalAlignment="Center" Grid.Row="1" Margin=" 0 -25 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label>
+                        <Label.Content>
+                            <Binding Path="CurrentPage">
+                                <Binding.StringFormat>Current Page: {0}</Binding.StringFormat>
+                            </Binding>
+                        </Label.Content>
+                    </Label>
+                    <Button Grid.Column="0" Content="Previous" Background="Green" Click="OnPreviousClicked" Margin="2"/>
+
+                    <Border Grid.Column="1" Margin="10 0 " 
+                            >
+                        <ScrollViewer HorizontalScrollBarVisibility="Auto"  HorizontalAlignment="Center" VerticalScrollBarVisibility="Disabled" Margin="0 0 0 0">
+                            <ItemsControl x:Name="buttons" ItemsSource="{Binding Buttons}" >
+                                <ItemsControl.ItemsPanel >
+                                    <ItemsPanelTemplate>
+                                        <StackPanel Orientation="Horizontal" Background="White"   />
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Button   Content="{Binding Path=Content}" Height="20" Width="20" Margin="5"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </ScrollViewer>
+                    </Border>
+                    <Button Grid.Column="2" Content="Next" Background="Green" Click="OnNextClicked" Margin="2"/>
+                </Grid>
+            </Grid>
+
+
+        </Border>
+    </Grid>
+</Page>

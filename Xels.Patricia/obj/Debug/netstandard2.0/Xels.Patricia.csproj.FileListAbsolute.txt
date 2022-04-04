@@ -1,0 +1,9 @@
+D:\Stratisnew\StratisFullNode\src\Xels.Patricia\bin\Debug\netstandard2.0\Xels.Patricia.deps.json
+D:\Stratisnew\StratisFullNode\src\Xels.Patricia\bin\Debug\netstandard2.0\Xels.Patricia.dll
+D:\Stratisnew\StratisFullNode\src\Xels.Patricia\bin\Debug\netstandard2.0\Xels.Patricia.pdb
+D:\Stratisnew\StratisFullNode\src\Xels.Patricia\obj\Debug\netstandard2.0\Xels.Patricia.csproj.AssemblyReference.cache
+D:\Stratisnew\StratisFullNode\src\Xels.Patricia\obj\Debug\netstandard2.0\Xels.Patricia.AssemblyInfoInputs.cache
+D:\Stratisnew\StratisFullNode\src\Xels.Patricia\obj\Debug\netstandard2.0\Xels.Patricia.AssemblyInfo.cs
+D:\Stratisnew\StratisFullNode\src\Xels.Patricia\obj\Debug\netstandard2.0\Xels.Patricia.csproj.CoreCompileInputs.cache
+D:\Stratisnew\StratisFullNode\src\Xels.Patricia\obj\Debug\netstandard2.0\Xels.Patricia.dll
+D:\Stratisnew\StratisFullNode\src\Xels.Patricia\obj\Debug\netstandard2.0\Xels.Patricia.pdb

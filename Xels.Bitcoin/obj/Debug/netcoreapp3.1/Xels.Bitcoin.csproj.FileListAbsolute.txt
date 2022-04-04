@@ -1,0 +1,16 @@
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin\bin\Debug\netcoreapp3.1\Xels.Bitcoin.deps.json
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin\bin\Debug\netcoreapp3.1\Xels.Bitcoin.dll
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin\bin\Debug\netcoreapp3.1\Xels.Bitcoin.pdb
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin\bin\Debug\netcoreapp3.1\FodyNlogAdapter.dll
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin\bin\Debug\netcoreapp3.1\NBitcoin.dll
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin\bin\Debug\netcoreapp3.1\FodyNlogAdapter.pdb
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin\bin\Debug\netcoreapp3.1\NBitcoin.pdb
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin\obj\Debug\netcoreapp3.1\Xels.Bitcoin.csproj.AssemblyReference.cache
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin\obj\Debug\netcoreapp3.1\Xels.Bitcoin.Properties.Resources.resources
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin\obj\Debug\netcoreapp3.1\Xels.Bitcoin.csproj.GenerateResource.cache
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin\obj\Debug\netcoreapp3.1\Xels.Bitcoin.AssemblyInfoInputs.cache
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin\obj\Debug\netcoreapp3.1\Xels.Bitcoin.AssemblyInfo.cs
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin\obj\Debug\netcoreapp3.1\Xels.Bitcoin.csproj.CoreCompileInputs.cache
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin\obj\Debug\netcoreapp3.1\Xels.Bitcoin.csproj.CopyComplete
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin\obj\Debug\netcoreapp3.1\Xels.Bitcoin.dll
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin\obj\Debug\netcoreapp3.1\Xels.Bitcoin.pdb

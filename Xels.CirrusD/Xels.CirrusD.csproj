@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Version>1.2.1.0</Version>
+    <Authors>Xels Group Ltd.</Authors>
+    <Company>Xels Group Ltd.</Company>
+    <Product />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Xels.Bitcoin.Features.SignalR\Xels.Bitcoin.Features.SignalR.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Networks\Xels.Bitcoin.Networks.csproj" />
+    <ProjectReference Include="..\Xels.Features.Diagnostic\Xels.Features.Diagnostic.csproj" />
+    <ProjectReference Include="..\Xels.Features.FederatedPeg\Xels.Features.FederatedPeg.csproj" />
+    <ProjectReference Include="..\Xels.Features.SQLiteWalletRepository\Xels.Features.SQLiteWalletRepository.csproj" />
+    <ProjectReference Include="..\Xels.Features.Unity3dApi\Xels.Features.Unity3dApi.csproj" />
+    <ProjectReference Include="..\Xels.Sidechains.Networks\Xels.Sidechains.Networks.csproj" />
+  </ItemGroup>
+
+</Project>

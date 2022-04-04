@@ -1,0 +1,8 @@
+D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.RuntimeObserver\bin\Release\netcoreapp3.1\Xels.SmartContracts.RuntimeObserver.deps.json
+D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.RuntimeObserver\bin\Release\netcoreapp3.1\Xels.SmartContracts.RuntimeObserver.dll
+D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.RuntimeObserver\bin\Release\netcoreapp3.1\Xels.SmartContracts.RuntimeObserver.pdb
+D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.RuntimeObserver\obj\Release\netcoreapp3.1\Xels.SmartContracts.RuntimeObserver.AssemblyInfoInputs.cache
+D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.RuntimeObserver\obj\Release\netcoreapp3.1\Xels.SmartContracts.RuntimeObserver.AssemblyInfo.cs
+D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.RuntimeObserver\obj\Release\netcoreapp3.1\Xels.SmartContracts.RuntimeObserver.csproj.CoreCompileInputs.cache
+D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.RuntimeObserver\obj\Release\netcoreapp3.1\Xels.SmartContracts.RuntimeObserver.dll
+D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.RuntimeObserver\obj\Release\netcoreapp3.1\Xels.SmartContracts.RuntimeObserver.pdb

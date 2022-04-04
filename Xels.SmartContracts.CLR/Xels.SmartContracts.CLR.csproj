@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    
+    <AssemblyVersion>2.0.2.0</AssemblyVersion>
+    <FileVersion>2.0.2.0</FileVersion>
+    <Version>2.0.2.0</Version>
+    <Authors>Xels Group Ltd.</Authors>
+    <Product>Xels.SmartContracts.CLR</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CSharpFunctionalExtensions" Version="1.10.0" />
+    <PackageReference Include="ICSharpCode.Decompiler" Version="3.2.0.3856" />
+	<PackageReference Include="Stratis.SmartContracts.Standards" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Xels.Bitcoin.Features.PoA\Xels.Bitcoin.Features.PoA.csproj" />
+    <ProjectReference Include="..\Xels.SmartContracts.Core\Xels.SmartContracts.Core.csproj" />
+  </ItemGroup>
+
+</Project>

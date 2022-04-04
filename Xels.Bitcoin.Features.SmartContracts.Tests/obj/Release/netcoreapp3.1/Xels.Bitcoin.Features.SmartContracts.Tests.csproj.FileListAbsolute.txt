@@ -1,0 +1,4 @@
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.SmartContracts.Tests\obj\Release\netcoreapp3.1\Xels.Bitcoin.Features.SmartContracts.Tests.csproj.AssemblyReference.cache
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.SmartContracts.Tests\obj\Release\netcoreapp3.1\Xels.Bitcoin.Features.SmartContracts.Tests.AssemblyInfoInputs.cache
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.SmartContracts.Tests\obj\Release\netcoreapp3.1\Xels.Bitcoin.Features.SmartContracts.Tests.AssemblyInfo.cs
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.SmartContracts.Tests\obj\Release\netcoreapp3.1\Xels.Bitcoin.Features.SmartContracts.Tests.csproj.CoreCompileInputs.cache

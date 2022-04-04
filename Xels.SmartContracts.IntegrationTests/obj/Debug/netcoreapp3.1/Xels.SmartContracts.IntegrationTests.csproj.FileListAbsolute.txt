@@ -1,0 +1,4 @@
+D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.IntegrationTests\obj\Debug\netcoreapp3.1\Xels.SmartContracts.IntegrationTests.csproj.AssemblyReference.cache
+D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.IntegrationTests\obj\Debug\netcoreapp3.1\Xels.SmartContracts.IntegrationTests.AssemblyInfoInputs.cache
+D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.IntegrationTests\obj\Debug\netcoreapp3.1\Xels.SmartContracts.IntegrationTests.AssemblyInfo.cs
+D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.IntegrationTests\obj\Debug\netcoreapp3.1\Xels.SmartContracts.IntegrationTests.csproj.CoreCompileInputs.cache

@@ -1,0 +1,140 @@
+﻿<Page x:Class="XelsCCDesktopWalletApp.Views.Pages.ExchangePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:XelsCCDesktopWalletApp.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="560" d:DesignWidth="880"
+      Title="ExchangePage">
+
+    <Grid Height="560" Margin="0, 0, 0, 0" Background="#FFCFCFCF" Width="880">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="194*"/>
+        </Grid.RowDefinitions>
+        <Border Background="White" BorderBrush="White" BorderThickness="2,1,1,1" Margin="5,5, 5,5" CornerRadius="10,10,10,10">
+            <StackPanel Orientation="Vertical" Name="depositStactPannal" Grid.Row="0" HorizontalAlignment="Center" Width="868">
+
+                <Grid Background="White" Width="800" Height="116" Margin="0 20 0 0">
+
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Vertical" Margin="0,10,285,66"  Grid.Column="0" Grid.ColumnSpan="2" >
+                        <Label Content="Deposit" Height="16" Width="302" Foreground="#FF615858"
+                                   FontFamily="Microsoft YaHei" FontSize="12" Padding="0" Margin="0"/>
+                        <ComboBox ItemsSource="{Binding Path=Coins, Mode=TwoWay}" 
+                                      SelectedItem="{Binding Path=SelectedCoin, Mode=TwoWay}"
+                                      Width="300" Background="White" BorderBrush="LimeGreen" Foreground="#FF615858" 
+                                      Padding="2" FontFamily="Microsoft YaHei Light" Name="Combobox"
+                                      >
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Name}"/>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="0,10,-1,66"  Grid.Column="1" >
+                        <Label Content="Amount" Height="16" Width="302" Foreground="#FF615858"
+                                FontFamily="Microsoft YaHei" FontSize="12" Padding="0"/>
+                        <TextBox x:Name="AmountTxt" KeyUp="AmountTxt_KeyUp"
+                                     TextWrapping="Wrap" Width="300" MaxLength="24" Padding="2" 
+                                     AutomationProperties.HelpText="Enter Amount." TextBlock.FontFamily="Microsoft YaHei Light" 
+                                     FontFamily="Microsoft YaHei Light" FontSize="10"  BorderBrush="LimeGreen" Foreground="#FF615858" 
+                                     TextAlignment="Left" Height="19">
+
+                        </TextBox>
+
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="-1,56,0,0"  Grid.ColumnSpan="2" >
+                        <!--<TextBlock x:Name="MessageTxt"  
+                                       Text="{Binding ElementName=AmountTxt, Path=Text, StringFormat='You will get {0} XELS', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                                       Height="22" Width="578" Foreground="Black"
+                                       FontFamily="Microsoft YaHei" FontSize="13" Padding="0" Margin="0"/>-->
+
+                        <TextBlock x:Name="MessageTxt" Height="40" Width="578" Foreground="Black"
+                                       FontFamily="Microsoft YaHei" FontSize="20" Padding="0" Margin="0"/>
+
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="10,86,10,0"  Grid.ColumnSpan="2" >
+                        <Button x:Name="exchangeSubmit" Content="Exchange Order Submit" Click="ExchangeOrderSubmitButton_Click" FontFamily="Microsoft YaHei Light" 
+                                Foreground="White" Background="#FF41A43C" BorderBrush="#FF41A43C" FontSize="10" 
+                                Width="148" Height="23" RenderTransformOrigin="0.492,1.438">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </StackPanel>
+
+                </Grid>
+
+            </StackPanel>
+        </Border>
+
+        <Border Background="White" BorderBrush="White" BorderThickness="2,1,1,1" CornerRadius="10,10,10,10" Margin="5,10,5,5" Grid.Row="1">
+            <StackPanel Orientation="Vertical" Grid.Row="1" Margin="0,10,0,10"  HorizontalAlignment="Center" Width="834" >
+                <Grid Height="373" Background="White" Width="842">
+                    <TextBlock Width="99" HorizontalAlignment="Left" FontFamily="Microsoft YaHei" Height="16" VerticalAlignment="Top" 
+                                   Text="LATEST EXCHANGES" FontSize="10" Foreground="#FF9B9B9B" Margin="330,10,0,0" />
+
+                    <Grid x:Name="NoData" Margin="0,0,0,-41">
+                        <Label Content="Looks like you haven't made any transactions yet."  HorizontalAlignment="Left"
+                       FontFamily="Microsoft YaHei Light" Margin="251,91,0,184" FontSize="12" FontWeight="Bold" Foreground="#FF494747" Width="282"/>
+                    </Grid>
+                    <Grid Margin="10,20,10,38" x:Name="ListData">
+                        <!--<DataGrid x:Name="ExchangesList" AutoGenerateColumns="False" HorizontalAlignment="Center" VerticalAlignment="Top" Width="780"
+                                      Margin="0,20,0,0" FontSize="11" BorderThickness="1" BorderBrush="Gray" RowHeight="25" Height="312"
+                                      Background="LightGray" RowBackground="LightYellow" AlternatingRowBackground="LightBlue" >
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Order Id" Binding="{Binding excid}" IsReadOnly="True" Width="100" />
+                                <DataGridTextColumn Header="Deposit" Binding="{Binding deposit_address_amount_symbol}" IsReadOnly="True" Width="200"  />
+                                <DataGridTextColumn Header="Recived" Binding="{Binding xels_address_amount}" IsReadOnly="True" Width="200" />
+                                <DataGridTextColumn Header="Status" Binding="{Binding showstatus}" IsReadOnly="True" Width="100"  />
+                                <DataGridTemplateColumn Header="Action" Width="200">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock FontWeight="Bold"  FontFamily="Microsoft YaHei Light" Margin="1 0 0 0" VerticalAlignment="Center"><InlineUIContainer>
+                                                    <Button Tag="{Binding RelativeSource={RelativeSource AncestorType={x:Type ListViewItem}}}"  
+                                                        Content="Deposit Now" Click="DepositButton_Click" Padding="1 0 1 0" />
+                                                </InlineUIContainer></TextBlock>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>-->
+                        <DataGrid Name="ExchangesList"  Width="850" ItemsSource="{Binding}" 
+                              HorizontalAlignment="Center" AutoGenerateColumns="False" 
+                              CanUserAddRows="False"
+                              ScrollViewer.CanContentScroll="True" 
+                              ScrollViewer.VerticalScrollBarVisibility="Auto"
+                              ScrollViewer.HorizontalScrollBarVisibility="Auto" Margin="0,10,0,-21">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ORDER ID" Width="Auto" Binding="{Binding Mode=TwoWay, Path=excid}" IsReadOnly="True" />
+                                <DataGridTextColumn Header="DEPOSIT" Width="Auto" Binding="{Binding Mode=TwoWay, Path=deposit_address_amount_symbol}" IsReadOnly="True" />
+                                <DataGridTextColumn Header="RECEIVED" Width="Auto" Binding="{Binding Mode=TwoWay, Path=xels_address_amount}" IsReadOnly="True" />
+                                <DataGridTextColumn Header="STATUS" Width="200" Binding="{Binding Mode=TwoWay, Path=showstatus}" IsReadOnly="True" />
+                                <DataGridTemplateColumn Header="Actions" Width="Auto">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Name="DepositButton"  Background="Green"  IsEnabled="{Binding IsDepositEnableBtn}"  Click="DepositButton_Click">Deposit Now</Button>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                            </DataGrid.Columns>
+
+                        </DataGrid>
+
+                    </Grid>
+                </Grid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

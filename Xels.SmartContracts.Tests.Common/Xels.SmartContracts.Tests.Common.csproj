@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    
+    <Version>2.0.1.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Xels.Bitcoin.Features.PoA.IntegrationTests.Common\Xels.Bitcoin.Features.PoA.IntegrationTests.Common.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Features.SmartContracts\Xels.Bitcoin.Features.SmartContracts.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.IntegrationTests.Common\Xels.Bitcoin.IntegrationTests.Common.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Tests.Common\Xels.Bitcoin.Tests.Common.csproj" />
+    <ProjectReference Include="..\Xels.SmartContracts.Networks\Xels.SmartContracts.Networks.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Xels.SmartContracts.RuntimeObserver/2.0.0.0": {
+        "runtime": {
+          "Xels.SmartContracts.RuntimeObserver.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Xels.SmartContracts.RuntimeObserver/2.0.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

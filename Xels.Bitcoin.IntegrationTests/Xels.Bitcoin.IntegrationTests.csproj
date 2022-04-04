@@ -1,0 +1,90 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net462|AnyCPU'">
+    <OutputType>exe</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Xels.Bitcoin.IntegrationTests</AssemblyName>    
+    <PackageId>Xels.Bitcoin.IntegrationTests</PackageId>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+    <GenerateProgramFile>false</GenerateProgramFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1705;IDE0008;</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Flurl" Version="3.0.1" />
+    <PackageReference Include="Flurl.Http" Version="3.0.1" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="NSubstitute" Version="4.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NBitcoin\NBitcoin.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Features.Api\Xels.Bitcoin.Features.Api.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Features.BlockStore\Xels.Bitcoin.Features.BlockStore.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Features.ColdStaking\Xels.Bitcoin.Features.ColdStaking.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Features.Consensus\Xels.Bitcoin.Features.Consensus.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Features.Dns\Xels.Bitcoin.Features.Dns.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Features.LightWallet\Xels.Bitcoin.Features.LightWallet.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Features.MemoryPool\Xels.Bitcoin.Features.MemoryPool.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Features.Miner\Xels.Bitcoin.Features.Miner.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Features.Notifications\Xels.Bitcoin.Features.Notifications.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Features.RPC\Xels.Bitcoin.Features.RPC.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Features.SmartContracts\Xels.Bitcoin.Features.SmartContracts.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Features.Wallet\Xels.Bitcoin.Features.Wallet.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Features.WatchOnlyWallet\Xels.Bitcoin.Features.WatchOnlyWallet.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.IntegrationTests.Common\Xels.Bitcoin.IntegrationTests.Common.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Tests.Common\Xels.Bitcoin.Tests.Common.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin\Xels.Bitcoin.csproj" />
+    <ProjectReference Include="..\Xels.SmartContracts.Core\Xels.SmartContracts.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.5.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data\test.wallet.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\invalid.cookie">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Wallet\Data\test.wallet.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="xunit.runner.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

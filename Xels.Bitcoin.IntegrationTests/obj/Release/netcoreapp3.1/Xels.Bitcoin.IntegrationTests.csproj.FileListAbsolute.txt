@@ -1,0 +1,4 @@
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.IntegrationTests\obj\Release\netcoreapp3.1\Xels.Bitcoin.IntegrationTests.csproj.AssemblyReference.cache
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.IntegrationTests\obj\Release\netcoreapp3.1\Xels.Bitcoin.IntegrationTests.AssemblyInfoInputs.cache
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.IntegrationTests\obj\Release\netcoreapp3.1\Xels.Bitcoin.IntegrationTests.AssemblyInfo.cs
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.IntegrationTests\obj\Release\netcoreapp3.1\Xels.Bitcoin.IntegrationTests.csproj.CoreCompileInputs.cache

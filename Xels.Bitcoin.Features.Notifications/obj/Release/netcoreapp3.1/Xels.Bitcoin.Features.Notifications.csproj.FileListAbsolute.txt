@@ -1,0 +1,16 @@
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.Notifications\bin\Release\netcoreapp3.1\Xels.Bitcoin.Features.Notifications.deps.json
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.Notifications\bin\Release\netcoreapp3.1\Xels.Bitcoin.Features.Notifications.dll
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.Notifications\bin\Release\netcoreapp3.1\Xels.Bitcoin.Features.Notifications.pdb
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.Notifications\bin\Release\netcoreapp3.1\FodyNlogAdapter.dll
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.Notifications\bin\Release\netcoreapp3.1\NBitcoin.dll
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.Notifications\bin\Release\netcoreapp3.1\Xels.Bitcoin.dll
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.Notifications\bin\Release\netcoreapp3.1\NBitcoin.pdb
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.Notifications\bin\Release\netcoreapp3.1\Xels.Bitcoin.pdb
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.Notifications\bin\Release\netcoreapp3.1\FodyNlogAdapter.pdb
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.Notifications\obj\Release\netcoreapp3.1\Xels.Bitcoin.Features.Notifications.csproj.AssemblyReference.cache
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.Notifications\obj\Release\netcoreapp3.1\Xels.Bitcoin.Features.Notifications.AssemblyInfoInputs.cache
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.Notifications\obj\Release\netcoreapp3.1\Xels.Bitcoin.Features.Notifications.AssemblyInfo.cs
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.Notifications\obj\Release\netcoreapp3.1\Xels.Bitcoin.Features.Notifications.csproj.CoreCompileInputs.cache
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.Notifications\obj\Release\netcoreapp3.1\Xels.Bitcoin.Features.Notifications.csproj.CopyComplete
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.Notifications\obj\Release\netcoreapp3.1\Xels.Bitcoin.Features.Notifications.dll
+D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.Notifications\obj\Release\netcoreapp3.1\Xels.Bitcoin.Features.Notifications.pdb

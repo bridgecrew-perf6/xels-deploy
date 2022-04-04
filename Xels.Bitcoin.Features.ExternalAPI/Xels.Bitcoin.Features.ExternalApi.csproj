@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>    
+    <Version>1.2.1.0</Version>
+    <Authors>Xels Group Ltd.</Authors>
+    <PackageId>Xels.Features.ExternalAPI</PackageId>
+    <Product>Xels.Features.ExternalAPI</Product>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DocumentationFile>bin\Debug\netcoreapp3.1\Xels.Bitcoin.Features.ExternalAPI.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="CSharpFunctionalExtensions" Version="1.10.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="3.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xels.Bitcoin.Features.PoA\Xels.Bitcoin.Features.PoA.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin\Xels.Bitcoin.csproj" />
+  </ItemGroup>
+
+</Project>

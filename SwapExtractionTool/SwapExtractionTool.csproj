@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="15.0.5" />
+    <PackageReference Include="Flurl" Version="3.0.1" />
+    <PackageReference Include="Flurl.Http" Version="3.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NBitcoin\NBitcoin.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Features.BlockStore\Xels.Bitcoin.Features.BlockStore.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Features.Wallet\Xels.Bitcoin.Features.Wallet.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Networks\Xels.Bitcoin.Networks.csproj" />
+  </ItemGroup>
+
+</Project>

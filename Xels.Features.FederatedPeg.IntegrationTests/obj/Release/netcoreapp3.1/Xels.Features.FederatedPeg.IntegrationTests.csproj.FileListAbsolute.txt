@@ -1,0 +1,3 @@
+D:\Stratisnew\StratisFullNode\src\Xels.Features.FederatedPeg.IntegrationTests\obj\Release\netcoreapp3.1\Xels.Features.FederatedPeg.IntegrationTests.AssemblyInfoInputs.cache
+D:\Stratisnew\StratisFullNode\src\Xels.Features.FederatedPeg.IntegrationTests\obj\Release\netcoreapp3.1\Xels.Features.FederatedPeg.IntegrationTests.AssemblyInfo.cs
+D:\Stratisnew\StratisFullNode\src\Xels.Features.FederatedPeg.IntegrationTests\obj\Release\netcoreapp3.1\Xels.Features.FederatedPeg.IntegrationTests.csproj.CoreCompileInputs.cache

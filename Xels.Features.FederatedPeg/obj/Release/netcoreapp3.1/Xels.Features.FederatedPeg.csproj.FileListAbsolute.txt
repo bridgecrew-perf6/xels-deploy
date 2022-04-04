@@ -1,0 +1,4 @@
+D:\Stratisnew\StratisFullNode\src\Xels.Features.FederatedPeg\obj\Release\netcoreapp3.1\Xels.Features.FederatedPeg.csproj.AssemblyReference.cache
+D:\Stratisnew\StratisFullNode\src\Xels.Features.FederatedPeg\obj\Release\netcoreapp3.1\Xels.Features.FederatedPeg.AssemblyInfoInputs.cache
+D:\Stratisnew\StratisFullNode\src\Xels.Features.FederatedPeg\obj\Release\netcoreapp3.1\Xels.Features.FederatedPeg.AssemblyInfo.cs
+D:\Stratisnew\StratisFullNode\src\Xels.Features.FederatedPeg\obj\Release\netcoreapp3.1\Xels.Features.FederatedPeg.csproj.CoreCompileInputs.cache

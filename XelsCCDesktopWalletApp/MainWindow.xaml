@@ -1,0 +1,169 @@
+﻿<Window x:Class="XelsCCDesktopWalletApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XelsCCDesktopWalletApp"
+        mc:Ignorable="d"
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+          xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        Title="Login" Height="500" Width="350" 
+        ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen" 
+        WindowStyle="None" 
+        FontFamily="Segoe UI Emoji">
+
+    <!--Border Padding="10"-->
+    <!--
+    <StackPanel>
+
+        -->
+    <!--- banner  -->
+    <!--
+        <StackPanel>
+
+            <Grid Background="LimeGreen" Margin="10" Height="100">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="70" Background="Transparent" BorderBrush="WhiteSmoke" 
+              BorderThickness="3" Margin="-2" CornerRadius="10" Padding="5">
+                    <Border.Effect>
+                        <DropShadowEffect ShadowDepth="0" BlurRadius="10" Opacity="50"/>
+                    </Border.Effect>
+                    <Image Source="/Assets/Images/home-xels-logo-01.png" >
+
+                    </Image>
+                </Border>
+            </Grid>
+        </StackPanel>         
+
+        <Border Margin="20">
+            <Label Content="Welcome" FontSize="25"
+                 FontWeight="Bold"  HorizontalAlignment="Center" FontFamily="Microsoft YaHei Light"/>
+        </Border>
+
+        <Border Margin="250 0 250 0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <ComboBox x:Name="comboWallets" Grid.Row="0" 
+              ItemsSource="{Binding  walletList, Mode=TwoWay}"   
+                      SelectedValuePath="Name"
+                      DisplayMemberPath="Name"
+                      IsEditable="True"              
+                      Text="Select Wallet"
+                      Background="White" BorderBrush="LimeGreen"  
+                      Padding="5" FontFamily="Microsoft YaHei Light" 
+                      Margin="0,0,10,20">
+                    
+                </ComboBox>
+
+                <PasswordBox Grid.Row="1" Name="password" PasswordChar="*" Margin="0,0,10,20" 
+                             Padding="5" RenderTransformOrigin="0.792,0.552" FontFamily="Microsoft YaHei Light" 
+                             Height="26" 
+                         BorderBrush="LimeGreen" 
+                         />
+
+                <Button Grid.Row="2" Background="#FF53E253"  x:Name="decryptButton" 
+                    Click="DecryptButton_ClickAsync" Margin="0 10 10 0" Grid.Column="0" Content="Decrypt" 
+                    FontFamily="Microsoft YaHei Light" FontWeight="Normal" Foreground="White" 
+                    BorderThickness="0,0,0,0" Height="24" FontStyle="Normal" >
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Label Grid.Row="3" Background="White" Margin="0 10 10 0" HorizontalAlignment="Center" 
+                   FontFamily="Microsoft YaHei Light"  FontSize="15" FontWeight="Bold" >
+                    <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="http://www.google.com" 
+                           TextDecorations="">
+                        <Hyperlink.Style>
+                            <Style TargetType="{x:Type Hyperlink}"
+                            BasedOn="{StaticResource {x:Type Hyperlink}}">
+                                <Setter Property="Foreground" Value="Black"/>
+                            </Style>
+                        </Hyperlink.Style>
+                        <Run Text="Create or Restore a wallet"/>
+                    </Hyperlink>
+                </Label>
+
+            </Grid>
+        </Border>
+
+
+    </StackPanel>-->
+    <Grid x:Name="Log_in_Window">
+
+        <Border Background="White" BorderBrush="#FFBBBBBB" BorderThickness="1,1,1,1" CornerRadius="10,10,10,10">
+
+            <Grid Margin="5,5,5,5" KeyDown="Grid_KeyDown">
+
+                <Rectangle Height="280" VerticalAlignment="Top" RadiusY="10" RadiusX="10">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF41A43C"/>
+                            <GradientStop Color="#FF41A43C" Offset="1"/>
+                            <GradientStop Color="#FF41A43C" Offset="0.546"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <Rectangle Name="loginInforactaangle" Width="280" Height="240" VerticalAlignment="Bottom" Margin="0,80" RadiusY="10" RadiusX="10" Fill="White">
+                    <Rectangle.Effect>
+                        <DropShadowEffect BlurRadius="15" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
+                    </Rectangle.Effect>
+                </Rectangle>
+                <Grid Name="loginInfoGrid" VerticalAlignment="Bottom" Margin="35,80" Height="240">
+                    <Label Content="LOGIN" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" Foreground="Gray" FontSize="18"/>
+                    <Label x:Name="labChainCheck" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,25,0,0" Foreground="Green" FontSize="12"/>
+
+                    <StackPanel VerticalAlignment="Center" Margin="15">
+
+                        <ComboBox x:Name="comboWallets" SelectionChanged="comboWallets_SelectionChanged" ItemsSource="{Binding  Path=walletList, Mode=TwoWay}"
+                           DisplayMemberPath="Name" SelectedValuePath="Name"
+                          Margin="0,10" materialDesign:HintAssist.Hint="WALLET NAME" 
+                          Style="{StaticResource MaterialDesignFloatingHintComboBox}"
+                          FontFamily="Champagne &amp; Limousines" FontSize="15" >
+
+                        </ComboBox>
+                        <!-- 
+                
+                
+                SelectedItem="{Binding Path=SelectedWallet, Mode=TwoWay}"
+                <TextBox Margin="0,10" materialDesign:HintAssist.Hint="EMAIL" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18"/>-->
+                        <PasswordBox Name="password"  PasswordChar="*" Margin="0,10" materialDesign:HintAssist.Hint="PASSWORD" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" FontFamily="Champagne &amp; Limousines" FontSize="15"/>
+                    </StackPanel>
+                </Grid>
+                <Button Width="150" x:Name="decryptButton" Click="DecryptButton_ClickAsync" HorizontalAlignment="Center" Background="#FF41A43C" VerticalAlignment="Bottom" Margin="0,65" Content="DECRYPT"/>
+                <Button x:Name="ButtonClose" Click="ButtonClose_Click" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="40" Height="30" Margin="300,0,0,468" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White">
+                    <materialDesign:PackIcon Kind="CloseBold" Foreground="White" VerticalAlignment="Center"/>
+                </Button>
+                
+                <TextBlock  Name="CreateOrReplaceBlock" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="30" Foreground="Gray" Cursor="Hand">
+                <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="http://www.google.com"  TextDecorations="">
+                    <Hyperlink.Style>
+                    <Style TargetType="{x:Type Hyperlink}"
+                            BasedOn="{StaticResource {x:Type Hyperlink}}">
+                        <Setter Property="Foreground" Value="Black"/>
+                    </Style>
+                </Hyperlink.Style><Run Text="CREATE OR RESTORE A WALLET"/>
+                </Hyperlink>
+                </TextBlock>
+                <Image Name="preLoader" Visibility="Collapsed"  Width="50" Height="50" gif:ImageBehavior.AnimatedSource="/Assets/Images/loading-3.gif" />
+                <Image Source="/Assets/Images/icon.ico" Width="100" Height="100" VerticalAlignment="Top" Margin="30"/>
+                <Label x:Name="laNodeStatusCheck" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Red" Margin="0,350,0,0" FontSize="14" Width="268"/>
+            </Grid>
+        </Border>
+
+    </Grid>
+</Window>

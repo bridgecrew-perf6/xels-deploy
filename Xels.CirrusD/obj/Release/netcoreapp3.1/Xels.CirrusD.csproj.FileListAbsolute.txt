@@ -1,0 +1,4 @@
+D:\Stratisnew\StratisFullNode\src\Xels.CirrusD\obj\Release\netcoreapp3.1\Xels.CirrusD.csproj.AssemblyReference.cache
+D:\Stratisnew\StratisFullNode\src\Xels.CirrusD\obj\Release\netcoreapp3.1\Xels.CirrusD.AssemblyInfoInputs.cache
+D:\Stratisnew\StratisFullNode\src\Xels.CirrusD\obj\Release\netcoreapp3.1\Xels.CirrusD.AssemblyInfo.cs
+D:\Stratisnew\StratisFullNode\src\Xels.CirrusD\obj\Release\netcoreapp3.1\Xels.CirrusD.csproj.CoreCompileInputs.cache

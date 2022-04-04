@@ -1,0 +1,248 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+	<StartupObject>XelsXLCDesktopWalletApp.Program</StartupObject>
+	<ApplicationIcon>icon.ico</ApplicationIcon>
+	<Version>5.0.0</Version>
+	<SignAssembly>false</SignAssembly>
+	<DelaySign>false</DelaySign>
+	<AssemblyOriginatorKeyFile>XelsSigningKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Images\greenCircle.png" />
+    <None Remove="Assets\Images\home-xels-logo-01.png" />
+    <None Remove="Assets\Images\icon.ico" />
+    <None Remove="Assets\Images\loading-3.gif" />
+    <None Remove="Assets\Images\redCircle.png" />
+    <None Remove="Assets\Images\thumbsdown.png" />
+    <None Remove="Assets\Images\thumbsup.png" />
+    <None Remove="icon.ico" />
+    <None Remove="Token\TokenFile.txt" />
+    <None Remove="Views\Pages\back-arrow.gif" />
+    <None Remove="Views\Pages\loading-3.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>f935dc20-1cf0-11d0-adb9-00c04fd58a0b</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Token\TokenFile.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Pages\back-arrow.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dotnetstandard-bip39" Version="1.0.2" />
+    <PackageReference Include="MaterialDesignColors" Version="2.0.1" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.1.0" />
+    <PackageReference Include="Nethereum.Web3" Version="3.8.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="QRCoder" Version="1.4.1" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.0" />
+    <PackageReference Include="xunit.assert" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Xels.Bitcoin.Features.Api\Xels.Bitcoin.Features.Api.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Features.Interop\Xels.Bitcoin.Features.Interop.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Features.Notifications\Xels.Bitcoin.Features.Notifications.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Networks\Xels.Bitcoin.Networks.csproj" />
+    <ProjectReference Include="..\Xels.Features.Collateral\Xels.Features.Collateral.csproj" />
+    <ProjectReference Include="..\Xels.Features.SQLiteWalletRepository\Xels.Features.SQLiteWalletRepository.csproj" />
+    <ProjectReference Include="..\Xels.Sidechains.Networks\Xels.Sidechains.Networks.csproj" />
+
+
+	  <ProjectReference Include="..\NBitcoin\NBitcoin.csproj" />
+	  <ProjectReference Include="..\Xels.Bitcoin.Features.BlockStore\Xels.Bitcoin.Features.BlockStore.csproj" />
+	  <ProjectReference Include="..\Xels.Bitcoin.Features.ColdStaking\Xels.Bitcoin.Features.ColdStaking.csproj" />
+	  <ProjectReference Include="..\Xels.Bitcoin.Features.Consensus\Xels.Bitcoin.Features.Consensus.csproj" />
+	  <ProjectReference Include="..\Xels.Bitcoin.Features.ExternalAPI\Xels.Bitcoin.Features.ExternalApi.csproj" />
+	  <ProjectReference Include="..\Xels.Bitcoin.Features.MemoryPool\Xels.Bitcoin.Features.MemoryPool.csproj" />
+	  <ProjectReference Include="..\Xels.Bitcoin.Features.Miner\Xels.Bitcoin.Features.Miner.csproj" />
+	  <ProjectReference Include="..\Xels.Bitcoin.Features.RPC\Xels.Bitcoin.Features.RPC.csproj" />
+	  <ProjectReference Include="..\Xels.Bitcoin.Features.SignalR\Xels.Bitcoin.Features.SignalR.csproj" />
+	  <ProjectReference Include="..\Xels.Bitcoin.Features.Wallet\Xels.Bitcoin.Features.Wallet.csproj" />
+	  <ProjectReference Include="..\Xels.Bitcoin\Xels.Bitcoin.csproj" />
+	  <ProjectReference Include="..\Xels.Features.Diagnostic\Xels.Features.Diagnostic.csproj" />
+	  <ProjectReference Include="..\Xels.Features.Unity3dApi\Xels.Features.Unity3dApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Images\greenCircle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\home-xels-logo-01.png" />
+    <Resource Include="Assets\Images\icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\loading-3.gif" />
+    <Resource Include="Assets\Images\redCircle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\thumbsdown.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\thumbsup.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Views\Pages\loading-3.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\Pages\Modals\AccountCreatedUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="App.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="UserControls\logo.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\CreateConfirmMnemonic.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\CreateOrRestore.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\CreateShowMnemonic.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\layout\MainLayout.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\layout\Testpage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\Pages\AddressBookPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\Pages\AdvancedPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\Pages\CreateWalletPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\Pages\Cross-chain Transfer\CrossChainTransferPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\Pages\Cross-chain Transfer\CrosschainUserControl.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\Pages\DashboardPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\Pages\ExchangePage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\Pages\HistoryPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\Pages\Modals\AccountCreatedUserControl.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\Modals\DisplayErrorMessageUserControl.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\Pages\Modals\DisplayMessageUserControl.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\Pages\Modals\ImportSelsBelsUserControl.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\Pages\Modals\LogoutConfirmUserControl.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\Pages\Modals\ReceiveUserControl.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\Pages\Modals\SendUserControl.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\Pages\ReceivePages\BelsPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\Pages\ReceivePages\SelsPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\Pages\ReceivePages\XelsPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\Pages\RestoreWalletPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\Pages\SendPages\BelsPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\Pages\SendPages\MainchainPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\Pages\SendPages\SelsPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\Pages\SendPages\SidechainPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\Pages\SendPages\XelsPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\SendConfirmationMainChain.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\SendConfirmationSideChain.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\SmartContractView\AddToken.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\SmartContractView\CallContract.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\SmartContractView\CreateContract.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\SmartContractView\IssueToken.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\ViewPage\SmtAddressSelection.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Views\ViewPage\SmtContractDashboard.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+  </ItemGroup>
+
+</Project>

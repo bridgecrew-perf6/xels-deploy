@@ -1,0 +1,3 @@
+D:\Stratisnew\StratisFullNode\src\Xels.Features.Collateral\obj\Release\netcoreapp3.1\Xels.Features.Collateral.AssemblyInfoInputs.cache
+D:\Stratisnew\StratisFullNode\src\Xels.Features.Collateral\obj\Release\netcoreapp3.1\Xels.Features.Collateral.AssemblyInfo.cs
+D:\Stratisnew\StratisFullNode\src\Xels.Features.Collateral\obj\Release\netcoreapp3.1\Xels.Features.Collateral.csproj.CoreCompileInputs.cache

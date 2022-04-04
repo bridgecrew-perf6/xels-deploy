@@ -1,0 +1,4 @@
+D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.CLR.Tests\obj\Debug\netcoreapp3.1\Xels.SmartContracts.CLR.Tests.AssemblyInfoInputs.cache
+D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.CLR.Tests\obj\Debug\netcoreapp3.1\Xels.SmartContracts.CLR.Tests.AssemblyInfo.cs
+D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.CLR.Tests\obj\Debug\netcoreapp3.1\Xels.SmartContracts.CLR.Tests.csproj.CoreCompileInputs.cache
+D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.CLR.Tests\obj\Debug\netcoreapp3.1\Xels.SmartContracts.CLR.Tests.csproj.AssemblyReference.cache

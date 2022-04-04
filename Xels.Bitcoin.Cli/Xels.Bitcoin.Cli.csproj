@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Version>1.2.1.0</Version>
+    <Authors>Xels Group Ltd.</Authors>
+    <Company>Xels Group Ltd.</Company>
+    <Product />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flurl" Version="3.0.1" />
+    <PackageReference Include="Flurl.Http" Version="3.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NBitcoin\NBitcoin.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Features.Api\Xels.Bitcoin.Features.Api.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Features.RPC\Xels.Bitcoin.Features.RPC.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin.Networks\Xels.Bitcoin.Networks.csproj" />
+    <ProjectReference Include="..\Xels.Bitcoin\Xels.Bitcoin.csproj" />
+  </ItemGroup>
+
+</Project>

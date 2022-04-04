@@ -1,0 +1,4 @@
+D:\Stratisnew\StratisFullNode\src\Xels.Benchmark\obj\Release\netcoreapp3.1\Xels.Benchmark.csproj.AssemblyReference.cache
+D:\Stratisnew\StratisFullNode\src\Xels.Benchmark\obj\Release\netcoreapp3.1\Xels.Benchmark.AssemblyInfoInputs.cache
+D:\Stratisnew\StratisFullNode\src\Xels.Benchmark\obj\Release\netcoreapp3.1\Xels.Benchmark.AssemblyInfo.cs
+D:\Stratisnew\StratisFullNode\src\Xels.Benchmark\obj\Release\netcoreapp3.1\Xels.Benchmark.csproj.CoreCompileInputs.cache

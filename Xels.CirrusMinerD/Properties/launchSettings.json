@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "Xels.CirrusMinerD": {
+      "commandName": "Project",
+      "commandLineArgs": "-devmode=miner"
+    },
+    "Xels.CirrusMinerD TestNet": {
+      "commandName": "Project",
+      "commandLineArgs": "-testnet -txindex=1"
+    },
+    "Xels.CirrusMinerD RegTest": {
+      "commandName": "Project",
+      "commandLineArgs": "-regtest -txindex=1"
+    }
+  }
+}

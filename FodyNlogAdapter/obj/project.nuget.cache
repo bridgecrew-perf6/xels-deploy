@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zGffH+tGrHLHmVdNx4e2qxd2Kugcmcca+SGZQyhldfohO/Gw+6hbdE8yR/xk9ZSpinDoiUmuZxltInz95CPaYg==",
+  "success": true,
+  "projectFilePath": "D:\\Stratisnew\\XelsDeploy\\xels-deploy\\FodyNlogAdapter\\FodyNlogAdapter.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SOL-HR\\.nuget\\packages\\nlog\\4.7.3\\nlog.4.7.3.nupkg.sha512"
+  ],
+  "logs": []
+}
