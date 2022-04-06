@@ -141,8 +141,7 @@ namespace XelsXLCDesktopWalletApp.Views.SmartContractView {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/XelsXLCDesktopWalletApp;V5.0.0.0;component/views/smartcontractview/issuetoken.xa" +
-                    "ml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/XelsXLCDesktopWalletApp;component/views/smartcontractview/issuetoken.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\SmartContractView\IssueToken.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -3,6 +3,7 @@ using System.Linq;
 using System.Text;
 using NBitcoin;
 using Newtonsoft.Json;
+using Stratis.SmartContracts;
 using Xels.SmartContracts.CLR.Exceptions;
 using Xels.SmartContracts.CLR.Serialization;
 using Xels.SmartContracts.Networks;

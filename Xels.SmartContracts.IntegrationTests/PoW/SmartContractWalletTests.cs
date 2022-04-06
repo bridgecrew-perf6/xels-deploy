@@ -389,7 +389,7 @@ namespace Xels.SmartContracts.IntegrationTests.PoW
 
                 LocalExecutionResponse result = node1.CallContractMethodLocally("OwnerOf", response.NewContractAddress, 0, parameters);
                 uint160 senderAddressUint160 = node1.MinerAddress.Address.ToUint160(node1.CoreNode.FullNode.Network);
-                uint160 returnedAddressUint160 = ((Address)result.Return).ToUint160();
+                uint160 returnedAddressUint160 = ((Stratis.SmartContracts.Address)result.Return).ToUint160();
                 Assert.Equal(senderAddressUint160, returnedAddressUint160);
 
                 // Send tokenId 1 to a new owner
@@ -409,7 +409,7 @@ namespace Xels.SmartContracts.IntegrationTests.PoW
                 };
                 result = node1.CallContractMethodLocally("OwnerOf", response.NewContractAddress, 0, parameters);
                 uint160 receiverAddressUint160 = node2.MinerAddress.Address.ToUint160(node1.CoreNode.FullNode.Network);
-                returnedAddressUint160 = ((Address)result.Return).ToUint160();
+                returnedAddressUint160 = ((Stratis.SmartContracts.Address)result.Return).ToUint160();
                 Assert.Equal(receiverAddressUint160, returnedAddressUint160);
 
                 IList<ReceiptResponse> receipts = node1.GetReceipts(response.NewContractAddress, "Transfer2");

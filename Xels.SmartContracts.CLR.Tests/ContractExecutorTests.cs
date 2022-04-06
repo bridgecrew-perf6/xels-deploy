@@ -40,7 +40,7 @@ namespace Xels.SmartContracts.CLR.Tests
         private readonly IContractPrimitiveSerializer contractPrimitiveSerializer;
         private readonly IStateProcessor stateProcessor;
         private readonly ISmartContractStateFactory smartContractStateFactory;
-        private readonly ISerializer serializer;
+        private readonly Stratis.SmartContracts.ISerializer serializer;
 
         public ContractExecutorTests()
         {

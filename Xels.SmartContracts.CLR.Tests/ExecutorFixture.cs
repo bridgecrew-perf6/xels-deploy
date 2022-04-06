@@ -3,6 +3,7 @@ using CSharpFunctionalExtensions;
 using Microsoft.Extensions.Logging;
 using Moq;
 using NBitcoin;
+using Stratis.SmartContracts;
 using Xels.SmartContracts.CLR.ResultProcessors;
 using Xels.SmartContracts.CLR.Serialization;
 using Xels.SmartContracts.Core;

@@ -21,7 +21,7 @@ namespace Xels.SmartContracts.CLR.Tests
         private readonly Network network;
         private readonly ReflectionVirtualMachine vm;
 
-        private readonly Address TestAddress;
+        private readonly Stratis.SmartContracts.Address TestAddress;
         private IStateRepository state;
         private SmartContractState contractState;
         private ContractExecutorTestContext context;
@@ -36,14 +36,14 @@ namespace Xels.SmartContracts.CLR.Tests
             this.vm = this.context.Vm;
             this.state = this.context.State;
             this.contractState = new SmartContractState(
-                new Block(1, this.TestAddress),
-                new Message(this.TestAddress, this.TestAddress, 0),
+                new Stratis.SmartContracts.Block(1, this.TestAddress),
+                new Stratis.SmartContracts.Message(this.TestAddress, this.TestAddress, 0),
                 new PersistentState(
                     new TestPersistenceStrategy(this.state),
                     this.context.Serializer, this.TestAddress.ToUint160()),
                 this.context.Serializer,
                 new ContractLogHolder(),
-                Mock.Of<IInternalTransactionExecutor>(),
+                Mock.Of<Stratis.SmartContracts.IInternalTransactionExecutor>(),
                 new InternalHashHelper(),
                 () => 1000);
             this.gasMeter = new GasMeter((RuntimeObserver.Gas)50_000);
@@ -154,15 +154,15 @@ public class Contract : SmartContract
             byte[] codeHash = HashHelper.Keccak256(contractExecutionCode);
 
             // Set up the state with an empty gasmeter so that out of gas occurs
-            var contractState = Mock.Of<ISmartContractState>(s =>
-                s.Block == Mock.Of<IBlock>(b => b.Number == 1 && b.Coinbase == this.TestAddress) &&
-                s.Message == new Message(this.TestAddress, this.TestAddress, 0) &&
+            var contractState = Mock.Of<Stratis.SmartContracts.ISmartContractState>(s =>
+                s.Block == Mock.Of<Stratis.SmartContracts.IBlock>(b => b.Number == 1 && b.Coinbase == this.TestAddress) &&
+                s.Message == new Stratis.SmartContracts.Message(this.TestAddress, this.TestAddress, 0) &&
                 s.PersistentState == new PersistentState(
                     new TestPersistenceStrategy(this.state),
                     this.context.Serializer, this.TestAddress.ToUint160()) &&
                 s.Serializer == this.context.Serializer &&
                 s.ContractLogger == new ContractLogHolder() &&
-                s.InternalTransactionExecutor == Mock.Of<IInternalTransactionExecutor>() &&
+                s.InternalTransactionExecutor == Mock.Of<Stratis.SmartContracts.IInternalTransactionExecutor>() &&
                 s.InternalHashHelper == new InternalHashHelper() &&
                 s.GetBalance == new Func<ulong>(() => 0));
 

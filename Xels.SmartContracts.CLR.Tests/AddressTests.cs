@@ -11,7 +11,7 @@ namespace Xels.SmartContracts.CLR.Tests
             0x04, 0x40, 0x05, 0x50, 0x06, 0x60, 0x07, 0x70, 0x08, 0x80
         };
 
-        private static readonly Address Address = AddressBytes.ToAddress();
+        private static readonly Stratis.SmartContracts.Address Address = AddressBytes.ToAddress();
 
         [Fact]
         public void UInt160_RoundTrip_Address_Success()

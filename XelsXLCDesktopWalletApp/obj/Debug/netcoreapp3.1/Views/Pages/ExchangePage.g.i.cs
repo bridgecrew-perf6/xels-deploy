@@ -128,7 +128,7 @@ namespace XelsXLCDesktopWalletApp.Views.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/XelsXLCDesktopWalletApp;V5.0.0.0;component/views/pages/exchangepage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/XelsXLCDesktopWalletApp;component/views/pages/exchangepage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Pages\ExchangePage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

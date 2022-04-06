@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using Moq;
 using NBitcoin;
+using Stratis.SmartContracts;
 using Xels.SmartContracts.CLR.Exceptions;
 using Xunit;
 

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Moq;
 using NBitcoin;
+using Stratis.SmartContracts;
 using Xels.SmartContracts.CLR.Local;
 using Xels.SmartContracts.Core.Receipts;
 using Xels.SmartContracts.Core.State;

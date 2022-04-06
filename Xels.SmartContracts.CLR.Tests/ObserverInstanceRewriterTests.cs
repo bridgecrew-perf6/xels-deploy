@@ -83,8 +83,8 @@ namespace Xels.SmartContracts.CLR.Tests
 
         private const string ContractName = "Test";
         private const string MethodName = "TestMethod";
-        private readonly Address TestAddress;
-        private ISmartContractState state;
+        private readonly Stratis.SmartContracts.Address TestAddress;
+        private Stratis.SmartContracts.ISmartContractState state;
         private const ulong Balance = 0;
         private const ulong GasLimit = 10000;
         private const ulong Value = 0;
@@ -120,13 +120,13 @@ namespace Xels.SmartContracts.CLR.Tests
             var network = new SmartContractsRegTest();
             var serializer = new ContractPrimitiveSerializerV2(network);
             this.state = new SmartContractState(
-                new Block(1, this.TestAddress),
-                new Message(this.TestAddress, this.TestAddress, 0),
+                new Stratis.SmartContracts.Block(1, this.TestAddress),
+                new Stratis.SmartContracts.Message(this.TestAddress, this.TestAddress, 0),
                 new PersistentState(new MeteredPersistenceStrategy(this.repository, this.gasMeter, new BasicKeyEncodingStrategy()),
                     context.Serializer, this.TestAddress.ToUint160()),
                 context.Serializer,
                 new ContractLogHolder(),
-                Mock.Of<IInternalTransactionExecutor>(),
+                Mock.Of<Stratis.SmartContracts.IInternalTransactionExecutor>(),
                 new InternalHashHelper(),
                 () => 1000);
 

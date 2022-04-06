@@ -72,8 +72,7 @@ namespace XelsCCDesktopWalletApp.Views.ViewPage {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/XelsCCDesktopWalletApp;V5.0.0.0;component/views/viewpage/smtaddressselection.xam" +
-                    "l", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/XelsCCDesktopWalletApp;component/views/viewpage/smtaddressselection.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\ViewPage\SmtAddressSelection.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

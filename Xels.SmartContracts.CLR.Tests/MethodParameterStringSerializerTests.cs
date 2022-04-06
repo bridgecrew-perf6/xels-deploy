@@ -39,7 +39,7 @@ namespace Xels.SmartContracts.CLR.Tests
         [Fact]
         public void Serialized_Address_Is_Base58()
         {
-            var address = new Address();
+            var address = new Stratis.SmartContracts.Address();
 
             var serializedAddress = MethodParameterStringSerializer.Serialize(address, Network);
             

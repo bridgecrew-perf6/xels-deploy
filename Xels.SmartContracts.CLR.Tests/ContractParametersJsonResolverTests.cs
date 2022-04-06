@@ -1,5 +1,6 @@
 ﻿using NBitcoin;
 using Newtonsoft.Json;
+using Stratis.SmartContracts;
 using Xels.Bitcoin.Features.SmartContracts.ReflectionExecutor;
 using Xels.SmartContracts.CLR.Local;
 using Xels.SmartContracts.Core;

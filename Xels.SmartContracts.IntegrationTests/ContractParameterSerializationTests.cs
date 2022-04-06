@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 using NBitcoin;
+using Stratis.SmartContracts;
 using Xels.Bitcoin.Features.SmartContracts.Models;
 using Xels.SmartContracts.CLR;
 using Xels.SmartContracts.CLR.Compilation;

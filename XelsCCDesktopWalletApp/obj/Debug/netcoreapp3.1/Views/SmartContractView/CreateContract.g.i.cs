@@ -125,8 +125,7 @@ namespace XelsCCDesktopWalletApp.Views.SmartContractView {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/XelsCCDesktopWalletApp;V5.0.0.0;component/views/smartcontractview/createcontract" +
-                    ".xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/XelsCCDesktopWalletApp;component/views/smartcontractview/createcontract.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\SmartContractView\CreateContract.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

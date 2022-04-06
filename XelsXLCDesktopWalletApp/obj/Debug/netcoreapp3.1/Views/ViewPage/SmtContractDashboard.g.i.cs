@@ -128,8 +128,7 @@ namespace XelsXLCDesktopWalletApp.Views.ViewPage {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/XelsXLCDesktopWalletApp;V5.0.0.0;component/views/viewpage/smtcontractdashboard.x" +
-                    "aml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/XelsXLCDesktopWalletApp;component/views/viewpage/smtcontractdashboard.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\ViewPage\SmtContractDashboard.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

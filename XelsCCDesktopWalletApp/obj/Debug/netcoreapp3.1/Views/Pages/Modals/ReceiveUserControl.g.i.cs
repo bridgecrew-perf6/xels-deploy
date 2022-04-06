@@ -80,8 +80,7 @@ namespace XelsCCDesktopWalletApp.Views.Pages.Modals {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/XelsCCDesktopWalletApp;V5.0.0.0;component/views/pages/modals/receiveusercontrol." +
-                    "xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/XelsCCDesktopWalletApp;component/views/pages/modals/receiveusercontrol.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\Views\Pages\Modals\ReceiveUserControl.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

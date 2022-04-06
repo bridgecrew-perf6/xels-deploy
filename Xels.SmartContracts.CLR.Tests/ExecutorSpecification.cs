@@ -1,5 +1,6 @@
 ﻿using Moq;
 using NBitcoin;
+using Stratis.SmartContracts;
 using Xels.SmartContracts.Core;
 using Xunit;
 

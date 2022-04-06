@@ -7,3 +7,12 @@ D:\Stratisnew\StratisFullNode\src\FodyNlogAdapter\obj\Debug\netcoreapp3.1\FodyNl
 D:\Stratisnew\StratisFullNode\src\FodyNlogAdapter\obj\Debug\netcoreapp3.1\FodyNlogAdapter.csproj.CoreCompileInputs.cache
 D:\Stratisnew\StratisFullNode\src\FodyNlogAdapter\obj\Debug\netcoreapp3.1\FodyNlogAdapter.dll
 D:\Stratisnew\StratisFullNode\src\FodyNlogAdapter\obj\Debug\netcoreapp3.1\FodyNlogAdapter.pdb
+D:\Stratisnew\XelsDeploy\xels-deploy\FodyNlogAdapter\bin\Debug\netcoreapp3.1\FodyNlogAdapter.deps.json
+D:\Stratisnew\XelsDeploy\xels-deploy\FodyNlogAdapter\bin\Debug\netcoreapp3.1\FodyNlogAdapter.dll
+D:\Stratisnew\XelsDeploy\xels-deploy\FodyNlogAdapter\bin\Debug\netcoreapp3.1\FodyNlogAdapter.pdb
+D:\Stratisnew\XelsDeploy\xels-deploy\FodyNlogAdapter\obj\Debug\netcoreapp3.1\FodyNlogAdapter.csproj.AssemblyReference.cache
+D:\Stratisnew\XelsDeploy\xels-deploy\FodyNlogAdapter\obj\Debug\netcoreapp3.1\FodyNlogAdapter.AssemblyInfoInputs.cache
+D:\Stratisnew\XelsDeploy\xels-deploy\FodyNlogAdapter\obj\Debug\netcoreapp3.1\FodyNlogAdapter.AssemblyInfo.cs
+D:\Stratisnew\XelsDeploy\xels-deploy\FodyNlogAdapter\obj\Debug\netcoreapp3.1\FodyNlogAdapter.csproj.CoreCompileInputs.cache
+D:\Stratisnew\XelsDeploy\xels-deploy\FodyNlogAdapter\obj\Debug\netcoreapp3.1\FodyNlogAdapter.dll
+D:\Stratisnew\XelsDeploy\xels-deploy\FodyNlogAdapter\obj\Debug\netcoreapp3.1\FodyNlogAdapter.pdb

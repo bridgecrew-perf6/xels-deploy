@@ -6,3 +6,12 @@ D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.RuntimeObserver\obj\Debug\
 D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.RuntimeObserver\obj\Debug\netcoreapp3.1\Xels.SmartContracts.RuntimeObserver.csproj.CoreCompileInputs.cache
 D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.RuntimeObserver\obj\Debug\netcoreapp3.1\Xels.SmartContracts.RuntimeObserver.dll
 D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.RuntimeObserver\obj\Debug\netcoreapp3.1\Xels.SmartContracts.RuntimeObserver.pdb
+D:\Stratisnew\XelsDeploy\xels-deploy\Xels.SmartContracts.RuntimeObserver\bin\Debug\netcoreapp3.1\Xels.SmartContracts.RuntimeObserver.deps.json
+D:\Stratisnew\XelsDeploy\xels-deploy\Xels.SmartContracts.RuntimeObserver\bin\Debug\netcoreapp3.1\Xels.SmartContracts.RuntimeObserver.dll
+D:\Stratisnew\XelsDeploy\xels-deploy\Xels.SmartContracts.RuntimeObserver\bin\Debug\netcoreapp3.1\Xels.SmartContracts.RuntimeObserver.pdb
+D:\Stratisnew\XelsDeploy\xels-deploy\Xels.SmartContracts.RuntimeObserver\obj\Debug\netcoreapp3.1\Xels.SmartContracts.RuntimeObserver.AssemblyInfoInputs.cache
+D:\Stratisnew\XelsDeploy\xels-deploy\Xels.SmartContracts.RuntimeObserver\obj\Debug\netcoreapp3.1\Xels.SmartContracts.RuntimeObserver.AssemblyInfo.cs
+D:\Stratisnew\XelsDeploy\xels-deploy\Xels.SmartContracts.RuntimeObserver\obj\Debug\netcoreapp3.1\Xels.SmartContracts.RuntimeObserver.csproj.CoreCompileInputs.cache
+D:\Stratisnew\XelsDeploy\xels-deploy\Xels.SmartContracts.RuntimeObserver\obj\Debug\netcoreapp3.1\Xels.SmartContracts.RuntimeObserver.dll
+D:\Stratisnew\XelsDeploy\xels-deploy\Xels.SmartContracts.RuntimeObserver\obj\Debug\netcoreapp3.1\Xels.SmartContracts.RuntimeObserver.pdb
+D:\Stratisnew\XelsDeploy\xels-deploy\Xels.SmartContracts.RuntimeObserver\obj\Debug\netcoreapp3.1\Xels.SmartContracts.RuntimeObserver.csproj.AssemblyReference.cache

@@ -61,8 +61,8 @@ namespace XelsCCDesktopWalletApp.Views.Pages.Cross_chain_Transfer {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/XelsCCDesktopWalletApp;V5.0.0.0;component/views/pages/cross-chain%20transfer/cro" +
-                    "sschainusercontrol.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/XelsCCDesktopWalletApp;component/views/pages/cross-chain%20transfer/crosschainus" +
+                    "ercontrol.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\Views\Pages\Cross-chain Transfer\CrosschainUserControl.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

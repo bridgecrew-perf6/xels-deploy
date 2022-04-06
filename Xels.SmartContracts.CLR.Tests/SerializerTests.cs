@@ -1,5 +1,6 @@
 ﻿using System;
 using Moq;
+using Stratis.SmartContracts;
 using Xels.SmartContracts.CLR.Serialization;
 using Xels.SmartContracts.Networks;
 using Xunit;

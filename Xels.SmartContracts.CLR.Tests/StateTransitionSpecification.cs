@@ -1,5 +1,6 @@
 ﻿using Moq;
 using NBitcoin;
+using Stratis.SmartContracts;
 using Xels.Bitcoin.Features.SmartContracts.ReflectionExecutor.Consensus.Rules;
 using Xels.SmartContracts.Core.State;
 using Xels.SmartContracts.Core.State.AccountAbstractionLayer;

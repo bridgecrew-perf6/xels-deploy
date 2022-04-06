@@ -64,7 +64,7 @@ namespace XelsXLCDesktopWalletApp.Views.layout {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/XelsXLCDesktopWalletApp;V5.0.0.0;component/views/layout/testpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/XelsXLCDesktopWalletApp;component/views/layout/testpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\layout\Testpage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

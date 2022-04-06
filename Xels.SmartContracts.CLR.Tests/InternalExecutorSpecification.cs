@@ -1,5 +1,6 @@
 ﻿using Moq;
 using NBitcoin;
+using Stratis.SmartContracts;
 using Xels.Bitcoin.Features.SmartContracts.ReflectionExecutor.Consensus.Rules;
 using Xunit;
 
@@ -29,7 +30,7 @@ namespace Xels.SmartContracts.CLR.Tests
                 fixture.State.Object,
                 fixture.StateProcessor.Object);
 
-            ICreateResult result = internalExecutor.Create<string>(fixture.SmartContractState, amount, parameters, gasLimit);
+            Stratis.SmartContracts.ICreateResult result = internalExecutor.Create<string>(fixture.SmartContractState, amount, parameters, gasLimit);
 
             fixture.State.Verify(s => s.Snapshot(), Times.Once);
             

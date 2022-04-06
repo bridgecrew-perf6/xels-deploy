@@ -125,8 +125,7 @@ namespace XelsCCDesktopWalletApp.Views.Pages.SendPages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/XelsCCDesktopWalletApp;V5.0.0.0;component/views/pages/sendpages/mainchainpage.xa" +
-                    "ml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/XelsCCDesktopWalletApp;component/views/pages/sendpages/mainchainpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\Views\Pages\SendPages\MainchainPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

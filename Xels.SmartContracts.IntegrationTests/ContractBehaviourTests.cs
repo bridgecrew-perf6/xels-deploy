@@ -229,7 +229,7 @@ namespace Xels.SmartContracts.IntegrationTests
             var createTransferResult = localExecutor.Execute((ulong)this.node1.CoreNode.FullNode.ChainIndexer.Height, this.mockChain.Nodes[0].MinerAddress.Address.ToUint160(this.node1.CoreNode.FullNode.Network), 0, call);
 
             Assert.NotEmpty(createTransferResult.InternalTransfers);
-            Assert.Equal(Address.Zero.ToUint160(), createTransferResult.InternalTransfers[0].To);
+            Assert.Equal(Stratis.SmartContracts.Address.Zero.ToUint160(), createTransferResult.InternalTransfers[0].To);
             Assert.Equal(1UL, createTransferResult.InternalTransfers[0].Value);
         }
 

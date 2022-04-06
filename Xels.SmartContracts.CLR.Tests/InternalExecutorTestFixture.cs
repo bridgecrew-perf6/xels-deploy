@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using Moq;
 using NBitcoin;
+using Stratis.SmartContracts;
 
 namespace Xels.SmartContracts.CLR.Tests
 {

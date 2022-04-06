@@ -7,3 +7,12 @@ D:\Stratisnew\StratisFullNode\src\Xels.Patricia\obj\Debug\netstandard2.0\Xels.Pa
 D:\Stratisnew\StratisFullNode\src\Xels.Patricia\obj\Debug\netstandard2.0\Xels.Patricia.csproj.CoreCompileInputs.cache
 D:\Stratisnew\StratisFullNode\src\Xels.Patricia\obj\Debug\netstandard2.0\Xels.Patricia.dll
 D:\Stratisnew\StratisFullNode\src\Xels.Patricia\obj\Debug\netstandard2.0\Xels.Patricia.pdb
+D:\Stratisnew\XelsDeploy\xels-deploy\Xels.Patricia\bin\Debug\netstandard2.0\Xels.Patricia.deps.json
+D:\Stratisnew\XelsDeploy\xels-deploy\Xels.Patricia\bin\Debug\netstandard2.0\Xels.Patricia.dll
+D:\Stratisnew\XelsDeploy\xels-deploy\Xels.Patricia\bin\Debug\netstandard2.0\Xels.Patricia.pdb
+D:\Stratisnew\XelsDeploy\xels-deploy\Xels.Patricia\obj\Debug\netstandard2.0\Xels.Patricia.csproj.AssemblyReference.cache
+D:\Stratisnew\XelsDeploy\xels-deploy\Xels.Patricia\obj\Debug\netstandard2.0\Xels.Patricia.AssemblyInfoInputs.cache
+D:\Stratisnew\XelsDeploy\xels-deploy\Xels.Patricia\obj\Debug\netstandard2.0\Xels.Patricia.AssemblyInfo.cs
+D:\Stratisnew\XelsDeploy\xels-deploy\Xels.Patricia\obj\Debug\netstandard2.0\Xels.Patricia.csproj.CoreCompileInputs.cache
+D:\Stratisnew\XelsDeploy\xels-deploy\Xels.Patricia\obj\Debug\netstandard2.0\Xels.Patricia.dll
+D:\Stratisnew\XelsDeploy\xels-deploy\Xels.Patricia\obj\Debug\netstandard2.0\Xels.Patricia.pdb

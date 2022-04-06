@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Stratis.SmartContracts;
 using Xels.SmartContracts.CLR.Serialization;
 using Xels.SmartContracts.Networks;
 using Xels.SmartContracts.RuntimeObserver;
@@ -9,7 +10,7 @@ namespace Xels.SmartContracts.CLR.Tests
 {
     public class AuctionTests
     {
-        private readonly Address TestAddress;
+        private readonly Stratis.SmartContracts.Address TestAddress;
         private TestSmartContractState smartContractState;
         private const ulong Balance = 0;
         private const ulong GasLimit = 10000;

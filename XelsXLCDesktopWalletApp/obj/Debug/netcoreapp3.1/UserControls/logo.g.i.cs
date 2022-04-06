@@ -53,7 +53,7 @@ namespace XelsXLCDesktopWalletApp.UserControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/XelsXLCDesktopWalletApp;V5.0.0.0;component/usercontrols/logo.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/XelsXLCDesktopWalletApp;component/usercontrols/logo.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\UserControls\logo.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

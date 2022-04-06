@@ -117,7 +117,7 @@ namespace XelsCCDesktopWalletApp.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/XelsCCDesktopWalletApp;V5.0.0.0;component/views/sendconfirmationmainchain.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/XelsCCDesktopWalletApp;component/views/sendconfirmationmainchain.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\SendConfirmationMainChain.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
