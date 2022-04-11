@@ -19,7 +19,7 @@ namespace Xels.Bitcoin.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -63,13 +63,14 @@ namespace Xels.Bitcoin.Properties {
         /// <summary>
         ///   Looks up a localized string similar to 
         ///
-        ///     .d8888b. 88888888888 8888888b.         d8888 88888888888 8888888  .d8888b. 
-        ///    d88P  Y88b    888     888   Y88b       d88888     888       888   d88P  Y88b
-        ///    Y88b.         888     888    888      d88P888     888       888   Y88b.     
-        ///     &quot;Y888b.      888     888   d88P     d88P 888     888       888    &quot;Y888b.  
-        ///        &quot;Y88b.    888     8888888P&quot;     d88P  888     888       888       &quot;Y88b.
-        ///          &quot;888    888     888 T88b     d88P   888     888       888         &quot;888
-        ///    Y88b  d88P   [rest of string was truncated]&quot;;.
+        ///ooooooo  ooooo oooooooooooo ooooo         .oooooo..o   
+        /// `8888    d8&apos;  `888&apos;     `8 `888&apos;        d8P&apos;    `Y8   
+        ///   Y888..8P     888          888         Y88bo.        
+        ///    `8888&apos;      888oooo8     888          `&quot;Y8888o.    
+        ///   .8PY888.     888    &quot;     888              `&quot;Y88b   
+        ///  d8&apos;  `888b    888       o  888       o oo     .d8P   
+        ///o888o  o88888o o888ooooood8 o888ooooood8 8&quot;&quot;88888P&apos;    
+        ///                                                                                                                       [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string AsciiLogo {
             get {
