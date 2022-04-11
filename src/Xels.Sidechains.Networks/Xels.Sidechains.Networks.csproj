@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    
+    <DebugType>Full</DebugType>
+    <CodeAnalysisRuleSet>..\None.ruleset</CodeAnalysisRuleSet>
+    <Version>1.2.1.0</Version>
+    <Authors>Xels Group Ltd.</Authors>
+    <PackageId>Xels.Sidechains.Networks</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Xels.SmartContracts.Networks\Xels.SmartContracts.Networks.csproj" />
+  </ItemGroup>
+
+</Project>

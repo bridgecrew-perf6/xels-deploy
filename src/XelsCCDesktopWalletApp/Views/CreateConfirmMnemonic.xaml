@@ -1,0 +1,107 @@
+﻿<Page x:Class="XelsCCDesktopWalletApp.Views.CreateConfirmMnemonic"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XelsCCDesktopWalletApp.Views"
+        mc:Ignorable="d"
+        Title="CreateConfirmMnemonic" Height="560" Width="1050">
+    <Grid x:Name="Confirm_Account_Creation">
+        <Border Margin="10,10,10,10" Background="White" BorderBrush="Green" BorderThickness="3" CornerRadius="10">
+
+            <StackPanel>
+
+                <StackPanel>
+                    <Border Margin="20 5" Height="109" Background="Green" CornerRadius="5">
+                        <Grid Background="Green" Margin="10,10,10,-1" Height="100" Width="724">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Border HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="70" Background="Transparent" BorderBrush="WhiteSmoke" 
+              BorderThickness="3" Margin="-2" CornerRadius="10" Padding="5">
+                                <Border.Effect>
+                                    <DropShadowEffect ShadowDepth="0" BlurRadius="10" Opacity="50"/>
+                                </Border.Effect>
+                                <Image Source="/Assets/Images/home-xels-logo-01.png" >
+
+                                </Image>
+                            </Border>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+
+                <Border>
+                    <Label Margin="0,10,0,0" Content="Confirm words" HorizontalAlignment="Center"  FontSize="28" FontWeight="DemiBold" />
+                </Border>
+
+                <Border Margin="250 2.5">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Name="wordone" Margin="5 0" Content="{Binding ElementName=Valueone, Path=wordone}"/>
+
+                        <TextBox Grid.Row="1" Name="word1" Padding="5" Margin="0 5" AutomationProperties.HelpText="Enter a wallet name." />
+                    </Grid>
+                </Border>
+
+                <Border Margin="250 2.5">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Name="wordtwo" Margin="5 0" Content="{Binding ElementName=Valuetwo, Path=wordtwo}"  />
+                        <TextBox Grid.Row="1" Name="word2" Margin="0 5" Padding="5" />
+                    </Grid>
+                </Border>
+
+                <Border Margin="250 2.5">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Name="wordthree" Margin="5 0"  Content="{Binding ElementName=Valuethree, Path=wordthree}"  />
+                        <TextBox Grid.Row="1" Name="word3" Margin="0 5" Padding="5"  />
+                    </Grid>
+                </Border>
+
+                <Border Margin="250 10">
+
+                    <Grid >
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="6*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Button x:Name="cancelButton" Click="CancelButton_Click" Grid.Column="0" Content="back" Padding="5" Margin="5 0" TextBlock.FontFamily="Microsoft YaHei Light" Background="White" Foreground="Green" BorderThickness="1" BorderBrush="Green" FontSize="14" RenderTransformOrigin="0.331,0.533">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="5"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+
+                        <Button x:Name="createButton" Click="CreateButton_Click" Grid.Column="1" Content="Confirm" Padding="5" Margin="5 0" TextBlock.FontFamily="Microsoft YaHei Light" Background="Green" Foreground="White" BorderThickness="0"  FontSize="14">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="5"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+
+                    </Grid>
+
+                </Border>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

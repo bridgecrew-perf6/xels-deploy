@@ -1,0 +1,159 @@
+﻿<Page x:Class="XelsCCDesktopWalletApp.Views.Pages.ReceivePages.XelsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:XelsCCDesktopWalletApp.Views.Pages.ReceivePages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="XelsPage">
+
+    <Grid Background="White" Margin="0,0,0,0" x:Name="Xels_Receive_Page">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <!--- image -->
+            <Border Grid.Row="0" Height="80">
+                <Image x:Name="image" />
+            </Border>
+            <!-- signle address and copy button  -->
+            <Border Grid.Row="1" x:Name="SingleAddress" >
+                <Grid Margin="100 2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  Width="2*"/>
+                        <ColumnDefinition  Width="0.5*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBox Grid.Column="0"  x:Name="textBoxTextToQr" Height="30"
+                      BorderBrush="Green" BorderThickness="1" Padding="5" Margin=" 5 0"  IsReadOnly="True" />
+
+                    <Button Grid.Column="1" Content="Copy" Click="SingleAddress_Copy_Button_Click"
+                            RenderTransformOrigin="2.423,0.568"      Margin="15 05"                        
+                        BorderThickness="1" BorderBrush="Green" Background="White" Foreground="Green"  >
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </Grid>
+            </Border>
+
+            <!-- address list -->
+            <Border Grid.Row="2" Margin="0,0,0,0" >
+
+                <Grid Margin="0,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Border x:Name="BackSingleAddressButton" Grid.Row="0" Visibility="Hidden"   
+                            HorizontalAlignment="Left" Margin="120,0,0,0" 
+                          >
+                        <Button  x:Name="backButton" 
+                                 Click="BackSingleAddressButton_Click" Content="Back"
+                      Margin=" 5 0" Background="White" BorderThickness="1" 
+                                 Foreground="Green" 
+                    BorderBrush="Green" >
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="5"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </Border>
+                    <Border x:Name="AllAddressList" Grid.Row="1"  Visibility="Hidden"
+                            Margin="0,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"  >
+                        <!--/Visibility="Hidden"-->
+
+                        <TabControl>
+                            <TabItem Header="Unused Addresses">
+
+                                <ListView Margin="2,2,2,2" x:Name="UnusedAddressList" 
+                                              VerticalContentAlignment="Top"  
+                                             ScrollViewer.VerticalScrollBarVisibility="Visible" MaxHeight="200"   
+                                              ScrollViewer.CanContentScroll="False">
+                                    <ListView.View>
+                                        <GridView x:Name="tablist">
+                                            <GridViewColumn Header="{Binding Path=Address}" Width="300" DisplayMemberBinding="{Binding Path=Address}"  />
+
+                                            <GridViewColumn Width="90" >
+                                                <GridViewColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock FontWeight="Bold">
+                                                <Button Tag="{Binding RelativeSource={RelativeSource AncestorType={x:Type ListViewItem}}}"  
+                                                         Content="Copy" Height="30" Click="Address_Copy_Button_Click" />
+                                                        </TextBlock>
+                                                    </DataTemplate>
+                                                </GridViewColumn.CellTemplate>
+                                            </GridViewColumn>
+                                        </GridView>
+                                    </ListView.View>
+                                </ListView>
+                            </TabItem>
+                            <TabItem Header="Used Addresses">
+                                <ListView Margin="2,2,2,2" x:Name="UsedAddressList" VerticalContentAlignment="Top"  
+                                        ScrollViewer.VerticalScrollBarVisibility="Visible" MaxHeight="200"   ScrollViewer.CanContentScroll="False" >
+                                    <ListView.View>
+                                        <GridView>
+                                            <GridViewColumn Width="300" DisplayMemberBinding="{Binding Path=Address}"  />
+                                            <GridViewColumn Width="90" >
+                                                <GridViewColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock FontWeight="Bold"  FontFamily="Microsoft YaHei Light" >
+                                                <Button Tag="{Binding RelativeSource={RelativeSource AncestorType={x:Type ListViewItem}}}"  
+                                                         Content="Copy" Height="30" Click="Address_Copy_Button_Click" />
+                                                        </TextBlock>
+                                                    </DataTemplate>
+                                                </GridViewColumn.CellTemplate>
+                                            </GridViewColumn>
+                                        </GridView>
+                                    </ListView.View>
+                                </ListView>
+                            </TabItem>
+
+                            <TabItem Header="Changed Addresses">
+                                <ListView Margin="2,2,2,2" x:Name="ChangedAddressList" VerticalContentAlignment="Top"  
+                                    ScrollViewer.VerticalScrollBarVisibility="Visible" MaxHeight="200"   ScrollViewer.CanContentScroll="False" >
+                                    <ListView.View>
+                                        <GridView>
+                                            <GridViewColumn Width="300" DisplayMemberBinding="{Binding Path= Address}"  />
+                                            <GridViewColumn Width="90" >
+                                                <GridViewColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock FontWeight="Bold"  FontFamily="Microsoft YaHei Light" >
+                                                        <Button Tag="{Binding RelativeSource={RelativeSource AncestorType={x:Type ListViewItem}}}"  
+                                                         Content="Copy" Height="30" Click="Address_Copy_Button_Click" />
+                                                        </TextBlock>
+                                                    </DataTemplate>
+                                                </GridViewColumn.CellTemplate>
+                                            </GridViewColumn>
+                                        </GridView>
+                                    </ListView.View>
+                                </ListView>
+                            </TabItem>
+                        </TabControl>
+
+                    </Border>
+                </Grid>
+            </Border>
+
+            <!---  show all addresses button  -->
+            <Border Grid.Row="03" >
+                <Border x:Name="BackShowAllAddressButton" Margin="0 2">
+                    <Button x:Name="showall" Click="ShowAllAddressButton_Click" HorizontalAlignment="Center" 
+                         FontSize="10" Content="Show All Addresses"
+                           RenderTransformOrigin="0.51,0.144">
+                    </Button>
+                </Border>
+            </Border>
+
+        </Grid>
+    </Grid>
+
+</Page>

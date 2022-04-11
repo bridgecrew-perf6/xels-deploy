@@ -1,0 +1,64 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
+using Xels.Bitcoin.Configuration.Logging;
+using Xels.Bitcoin.EventBus;
+using Xels.Bitcoin.Signals;
+
+namespace Xels.Bitcoin.Features.SignalR
+{
+    /// <summary>
+    /// This class subscribes to Xels.Bitcoin.EventBus messages and proxy's them
+    /// to SignalR messages.
+    /// </summary>
+    public class EventSubscriptionService : IEventsSubscriptionService, IDisposable
+    {
+        private readonly SignalROptions options;
+        private readonly ISignals signals;
+        private readonly EventsHub eventsHub;
+        private readonly ILogger logger;
+        private readonly List<SubscriptionToken> subscriptions = new List<SubscriptionToken>();
+
+        public EventSubscriptionService(
+            SignalROptions options,
+            ISignals signals,
+            EventsHub eventsHub)
+        {
+            this.options = options;
+            this.signals = signals;
+            this.eventsHub = eventsHub;
+            this.logger = LogManager.GetCurrentClassLogger();
+        }
+
+        public void Init()
+        {
+            foreach (IClientEvent eventToHandle in this.options.EventsToHandle)
+            {
+                this.logger.LogDebug("Create subscription for {0}", eventToHandle.NodeEventType);
+
+                async Task callback(EventBase eventBase)
+                {
+                    Type childType = eventBase.GetType();
+
+                    IClientEvent clientEvent = this.options.EventsToHandle.FirstOrDefault(ev => ev.NodeEventType == childType);
+                    if (clientEvent == null)
+                        return;
+
+                    clientEvent.BuildFrom(eventBase);
+
+                    await this.eventsHub.SendToClientsAsync(clientEvent).ConfigureAwait(false);
+                }
+
+                this.signals.Subscribe(eventToHandle.NodeEventType, callback);
+            }
+        }
+
+        public void Dispose()
+        {
+            this.eventsHub?.Dispose();
+            this.subscriptions.ForEach(s => s?.Dispose());
+        }
+    }
+}

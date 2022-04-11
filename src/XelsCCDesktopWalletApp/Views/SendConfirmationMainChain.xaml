@@ -1,0 +1,103 @@
+﻿<UserControl x:Class="XelsCCDesktopWalletApp.Views.SendConfirmationMainChain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XelsCCDesktopWalletApp.Views"
+        mc:Ignorable="d"
+             d:HorizontalAlignment="Stretch" d:VerticalAlignment="Stretch" >
+    <!--Height="450" Width="800"-->
+    <StackPanel Background="White">
+
+        <Rectangle Fill="AliceBlue" Opacity=".8" MouseDown="Rectangle_MouseDown" />
+
+        <Border CornerRadius="10"  Background="White" Height="350" Width="500">
+            <Grid Margin="100 30" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Border Grid.Row="0" Margin="0 10">
+                    <TextBlock Margin="0,1"   FontSize="24" HorizontalAlignment="Center" FontWeight="DemiBold"  > Sent</TextBlock>
+                </Border>
+
+                <Border Grid.Row="1">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Content="Amount sent:"   FontFamily="Microsoft YaHei Light" FontSize="14"/>
+                        <Label Grid.Column="1" Name="AmountSent"   FontFamily="Microsoft YaHei Light" FontSize="12"/>
+                        <Label Grid.Column="2" Name="AmountSentType"    FontFamily="Microsoft YaHei Light" FontSize="14"/>
+                    </Grid>
+                </Border>
+
+                <Border Grid.Row="2">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Column="0" Content="Fee:"  FontFamily="Microsoft YaHei Light" FontSize="14"/>
+                        <Label Grid.Column="1" Name="Fee"  FontFamily="Microsoft YaHei Light" FontSize="12"/>
+                        <Label Grid.Column="2" x:Name="FeeType"  FontFamily="Microsoft YaHei Light" FontSize="14"/>
+                    </Grid>
+
+                </Border>
+
+                <Border Grid.Row="3">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Column="0" Content="Total:"   FontSize="14"/>
+                        <Label Grid.Column="1" x:Name="Total"  FontSize="12"/>
+                        <Label Grid.Column="2" x:Name="TotalType"    FontSize="14"/>
+                    </Grid>
+                </Border>
+
+                <Border Grid.Row="4">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Column="0" Content="Destination:"  FontSize="14"/>
+                        <Label Grid.Column="1" Name="Destination"  FontSize="14"/>
+                    </Grid>
+                </Border>
+                <Border Grid.Row="5">
+                    <Grid >
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Grid.Column="0" x:Name="cancelButton" Click="cancelButton_Click"  Content="Close"    TextBlock.FontFamily="Microsoft YaHei Light" Background="White" Foreground="Black" BorderThickness="1,1,1,1" BorderBrush="Black" FontSize="14" Padding="5,5,5,5" HorizontalAlignment="Center">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="5"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+
+                    </Grid>
+                </Border>
+
+
+
+            </Grid>
+        </Border>
+    </StackPanel>
+</UserControl>

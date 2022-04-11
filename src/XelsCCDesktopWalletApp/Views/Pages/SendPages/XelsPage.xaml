@@ -1,0 +1,57 @@
+﻿<Page x:Class="XelsCCDesktopWalletApp.Views.Pages.SendPages.XelsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:XelsCCDesktopWalletApp.Views.Pages.SendPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1000"
+      Title="XelsPage" Initialized="Window_Initialized">
+
+    <StackPanel Background="White">
+        <Grid Margin="100 010" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <!-- mainchain,  sidechain button -->
+            <Border Grid.Row="0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    
+                    <Button Grid.Column="0" Content="MainChain"  
+                        Background="Green"  
+                        Padding="5,5,5,5"  Foreground="White" FontSize="13" Click="Mainchain_Button_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Grid.Column="1" Content="SideChain"  
+                        Background="#FFE4EAE1"  
+                        Padding="5,5,5,5"  Foreground="Green" FontSize="13" Click="Sidechain_Button_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </Grid>
+            </Border>
+
+            
+
+        </Grid>
+
+        <Frame x:Name="xelsPageContent" />
+
+    </StackPanel>
+    
+</Page>

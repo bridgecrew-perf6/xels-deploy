@@ -1,0 +1,132 @@
+﻿<UserControl x:Class="XelsXLCDesktopWalletApp.Views.SendConfirmationSideChain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XelsXLCDesktopWalletApp.Views"
+        mc:Ignorable="d"
+         d:HorizontalAlignment="Stretch" d:VerticalAlignment="Stretch">
+    <Grid>
+        <Rectangle Fill="#e9eeeb" Opacity=".8" MouseDown="Rectangle_MouseDown" />
+        <!--Title="SendConfirmationSideChain"-->
+        <Border Width="400" Margin="30 10">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Border Grid.Row="0">
+                    <TextBlock FontSize="26" HorizontalAlignment="Center" Text="Sent"/>
+                </Border>
+                
+                <Border Grid.Row="1">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Column="0" Content="Amount sent:"  />
+                        <Label Grid.Column="1" Name="AmountSent" />
+                    </Grid>
+                </Border>
+
+                <Border Grid.Row="2">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Column="0" Content="Fee:" />
+                        <Label Name="Fee"  Grid.Column="1"/>
+                        <Label x:Name="FeeType"  Grid.Column="2" />
+                    </Grid>
+                </Border>
+
+                <Border Grid.Row="3">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="OP return amount:" Grid.Column="0" />
+                        <Label x:Name="OPreturn" Grid.Column="1" />
+                        <Label x:Name="OPreturnType"  Grid.Column="2" />
+                    </Grid>
+                </Border>
+
+                <Border Grid.Row="4">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="1.2*"/>
+                            
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Total:" Grid.Column="0" />
+                        <Label x:Name="Total" Grid.Column="1"/>
+                    </Grid>
+                </Border>
+
+                <Border Grid.Row="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".8*"/>
+                            <ColumnDefinition Width="1.2*"/>
+
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Destination Federation:" Grid.Column="0"/>
+                        <Label Name="DestinationFederation" Grid.Column="1"/>
+                    </Grid>
+                </Border>
+
+                <Border Grid.Row="6">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".8*"/>
+                            <ColumnDefinition Width="1.2*"/>
+
+                        </Grid.ColumnDefinitions>
+                        <Label  Content="Destination Address:" Grid.Column="0"/>
+                        <Label x:Name="DestinationAddress" Grid.Column="1"/>
+                    </Grid>
+                </Border>
+
+                <Border Grid.Row="7" Margin="150 10">
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Grid.Column="0" x:Name="cancelButton" Click="cancelButton_Click" Content="Close"  Background="White" Foreground="Black" BorderThickness="1,1,1,1" BorderBrush="Black" FontSize="14" >
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="5"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+
+                    </Grid>
+                </Border >
+            </Grid>
+            
+        </Border>
+
+        
+ 
+         
+         
+      
+    </Grid>
+</UserControl>
