@@ -1,3 +1,0 @@
-D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.Networks\obj\Release\netcoreapp3.1\Xels.SmartContracts.Networks.AssemblyInfoInputs.cache
-D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.Networks\obj\Release\netcoreapp3.1\Xels.SmartContracts.Networks.AssemblyInfo.cs
-D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.Networks\obj\Release\netcoreapp3.1\Xels.SmartContracts.Networks.csproj.CoreCompileInputs.cache

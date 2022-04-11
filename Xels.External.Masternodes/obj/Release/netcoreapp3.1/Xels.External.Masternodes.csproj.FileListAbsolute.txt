@@ -1,4 +1,0 @@
-D:\Stratisnew\StratisFullNode\src\Xels.External.Masternodes\obj\Release\netcoreapp3.1\Xels.External.Masternodes.csproj.AssemblyReference.cache
-D:\Stratisnew\StratisFullNode\src\Xels.External.Masternodes\obj\Release\netcoreapp3.1\Xels.External.Masternodes.AssemblyInfoInputs.cache
-D:\Stratisnew\StratisFullNode\src\Xels.External.Masternodes\obj\Release\netcoreapp3.1\Xels.External.Masternodes.AssemblyInfo.cs
-D:\Stratisnew\StratisFullNode\src\Xels.External.Masternodes\obj\Release\netcoreapp3.1\Xels.External.Masternodes.csproj.CoreCompileInputs.cache

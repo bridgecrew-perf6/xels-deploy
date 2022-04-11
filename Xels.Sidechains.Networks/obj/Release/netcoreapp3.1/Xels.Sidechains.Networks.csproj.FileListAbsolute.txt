@@ -1,3 +1,0 @@
-D:\Stratisnew\StratisFullNode\src\Xels.Sidechains.Networks\obj\Release\netcoreapp3.1\Xels.Sidechains.Networks.AssemblyInfoInputs.cache
-D:\Stratisnew\StratisFullNode\src\Xels.Sidechains.Networks\obj\Release\netcoreapp3.1\Xels.Sidechains.Networks.AssemblyInfo.cs
-D:\Stratisnew\StratisFullNode\src\Xels.Sidechains.Networks\obj\Release\netcoreapp3.1\Xels.Sidechains.Networks.csproj.CoreCompileInputs.cache

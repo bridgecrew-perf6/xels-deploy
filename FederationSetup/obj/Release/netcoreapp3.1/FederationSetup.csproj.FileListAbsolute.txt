@@ -1,4 +1,0 @@
-D:\Stratisnew\StratisFullNode\src\FederationSetup\obj\Release\netcoreapp3.1\FederationSetup.csproj.AssemblyReference.cache
-D:\Stratisnew\StratisFullNode\src\FederationSetup\obj\Release\netcoreapp3.1\FederationSetup.AssemblyInfoInputs.cache
-D:\Stratisnew\StratisFullNode\src\FederationSetup\obj\Release\netcoreapp3.1\FederationSetup.AssemblyInfo.cs
-D:\Stratisnew\StratisFullNode\src\FederationSetup\obj\Release\netcoreapp3.1\FederationSetup.csproj.CoreCompileInputs.cache

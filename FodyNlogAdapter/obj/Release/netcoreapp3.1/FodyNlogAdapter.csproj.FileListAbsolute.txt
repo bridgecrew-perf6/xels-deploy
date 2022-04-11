@@ -1,9 +1,0 @@
-D:\Stratisnew\StratisFullNode\src\FodyNlogAdapter\bin\Release\netcoreapp3.1\FodyNlogAdapter.deps.json
-D:\Stratisnew\StratisFullNode\src\FodyNlogAdapter\bin\Release\netcoreapp3.1\FodyNlogAdapter.dll
-D:\Stratisnew\StratisFullNode\src\FodyNlogAdapter\bin\Release\netcoreapp3.1\FodyNlogAdapter.pdb
-D:\Stratisnew\StratisFullNode\src\FodyNlogAdapter\obj\Release\netcoreapp3.1\FodyNlogAdapter.csproj.AssemblyReference.cache
-D:\Stratisnew\StratisFullNode\src\FodyNlogAdapter\obj\Release\netcoreapp3.1\FodyNlogAdapter.AssemblyInfoInputs.cache
-D:\Stratisnew\StratisFullNode\src\FodyNlogAdapter\obj\Release\netcoreapp3.1\FodyNlogAdapter.AssemblyInfo.cs
-D:\Stratisnew\StratisFullNode\src\FodyNlogAdapter\obj\Release\netcoreapp3.1\FodyNlogAdapter.csproj.CoreCompileInputs.cache
-D:\Stratisnew\StratisFullNode\src\FodyNlogAdapter\obj\Release\netcoreapp3.1\FodyNlogAdapter.dll
-D:\Stratisnew\StratisFullNode\src\FodyNlogAdapter\obj\Release\netcoreapp3.1\FodyNlogAdapter.pdb

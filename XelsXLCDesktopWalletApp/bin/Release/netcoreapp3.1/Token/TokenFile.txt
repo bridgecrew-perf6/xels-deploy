@@ -1,9 +1,0 @@
-{
-  "Ticker": "MEDI",
-  "Address": "CUwkBGkXrQpMnZeWW2SpAv1Vu9zPvjWNFS",
-  "Name": "Mediconnect",
-  "Decimals": "8",
-  "Balance": "0",
-  "DropDownValue": null
-}
-,

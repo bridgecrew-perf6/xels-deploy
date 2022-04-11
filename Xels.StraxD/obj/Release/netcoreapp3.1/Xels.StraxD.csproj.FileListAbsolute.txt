@@ -1,3 +1,0 @@
-D:\Stratisnew\StratisFullNode\src\Xels.StraxD\obj\Release\netcoreapp3.1\Xels.StraxD.AssemblyInfoInputs.cache
-D:\Stratisnew\StratisFullNode\src\Xels.StraxD\obj\Release\netcoreapp3.1\Xels.StraxD.AssemblyInfo.cs
-D:\Stratisnew\StratisFullNode\src\Xels.StraxD\obj\Release\netcoreapp3.1\Xels.StraxD.csproj.CoreCompileInputs.cache

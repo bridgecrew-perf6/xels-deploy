@@ -1,3 +1,0 @@
-D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.Interop\obj\Release\netcoreapp3.1\Xels.Bitcoin.Features.Interop.AssemblyInfoInputs.cache
-D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.Interop\obj\Release\netcoreapp3.1\Xels.Bitcoin.Features.Interop.AssemblyInfo.cs
-D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.Interop\obj\Release\netcoreapp3.1\Xels.Bitcoin.Features.Interop.csproj.CoreCompileInputs.cache

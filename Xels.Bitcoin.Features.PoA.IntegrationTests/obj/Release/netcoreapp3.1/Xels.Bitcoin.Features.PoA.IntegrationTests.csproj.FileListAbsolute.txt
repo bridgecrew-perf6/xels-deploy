@@ -1,3 +1,0 @@
-D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.PoA.IntegrationTests\obj\Release\netcoreapp3.1\Xels.Bitcoin.Features.PoA.IntegrationTests.AssemblyInfoInputs.cache
-D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.PoA.IntegrationTests\obj\Release\netcoreapp3.1\Xels.Bitcoin.Features.PoA.IntegrationTests.AssemblyInfo.cs
-D:\Stratisnew\StratisFullNode\src\Xels.Bitcoin.Features.PoA.IntegrationTests\obj\Release\netcoreapp3.1\Xels.Bitcoin.Features.PoA.IntegrationTests.csproj.CoreCompileInputs.cache

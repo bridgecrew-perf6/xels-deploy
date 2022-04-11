@@ -1,3 +1,0 @@
-D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.Tests.Common\obj\Release\netcoreapp3.1\Xels.SmartContracts.Tests.Common.AssemblyInfoInputs.cache
-D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.Tests.Common\obj\Release\netcoreapp3.1\Xels.SmartContracts.Tests.Common.AssemblyInfo.cs
-D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.Tests.Common\obj\Release\netcoreapp3.1\Xels.SmartContracts.Tests.Common.csproj.CoreCompileInputs.cache

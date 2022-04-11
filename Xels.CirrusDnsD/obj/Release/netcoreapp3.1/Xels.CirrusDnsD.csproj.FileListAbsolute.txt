@@ -1,3 +1,0 @@
-D:\Stratisnew\StratisFullNode\src\Xels.CirrusDnsD\obj\Release\netcoreapp3.1\Xels.CirrusDnsD.AssemblyInfoInputs.cache
-D:\Stratisnew\StratisFullNode\src\Xels.CirrusDnsD\obj\Release\netcoreapp3.1\Xels.CirrusDnsD.AssemblyInfo.cs
-D:\Stratisnew\StratisFullNode\src\Xels.CirrusDnsD\obj\Release\netcoreapp3.1\Xels.CirrusDnsD.csproj.CoreCompileInputs.cache

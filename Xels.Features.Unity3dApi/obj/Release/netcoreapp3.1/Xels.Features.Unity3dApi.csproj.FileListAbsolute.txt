@@ -1,3 +1,0 @@
-D:\Stratisnew\StratisFullNode\src\Xels.Features.Unity3dApi\obj\Release\netcoreapp3.1\Xels.Features.Unity3dApi.AssemblyInfoInputs.cache
-D:\Stratisnew\StratisFullNode\src\Xels.Features.Unity3dApi\obj\Release\netcoreapp3.1\Xels.Features.Unity3dApi.AssemblyInfo.cs
-D:\Stratisnew\StratisFullNode\src\Xels.Features.Unity3dApi\obj\Release\netcoreapp3.1\Xels.Features.Unity3dApi.csproj.CoreCompileInputs.cache

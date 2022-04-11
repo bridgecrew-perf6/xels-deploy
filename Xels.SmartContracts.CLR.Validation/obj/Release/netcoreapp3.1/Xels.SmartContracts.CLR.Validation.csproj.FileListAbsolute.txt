@@ -1,9 +1,0 @@
-D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.CLR.Validation\bin\Release\netcoreapp3.1\Xels.SmartContracts.CLR.Validation.deps.json
-D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.CLR.Validation\bin\Release\netcoreapp3.1\Xels.SmartContracts.CLR.Validation.dll
-D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.CLR.Validation\bin\Release\netcoreapp3.1\Xels.SmartContracts.CLR.Validation.pdb
-D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.CLR.Validation\obj\Release\netcoreapp3.1\Xels.SmartContracts.CLR.Validation.csproj.AssemblyReference.cache
-D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.CLR.Validation\obj\Release\netcoreapp3.1\Xels.SmartContracts.CLR.Validation.AssemblyInfoInputs.cache
-D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.CLR.Validation\obj\Release\netcoreapp3.1\Xels.SmartContracts.CLR.Validation.AssemblyInfo.cs
-D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.CLR.Validation\obj\Release\netcoreapp3.1\Xels.SmartContracts.CLR.Validation.csproj.CoreCompileInputs.cache
-D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.CLR.Validation\obj\Release\netcoreapp3.1\Xels.SmartContracts.CLR.Validation.dll
-D:\Stratisnew\StratisFullNode\src\Xels.SmartContracts.CLR.Validation\obj\Release\netcoreapp3.1\Xels.SmartContracts.CLR.Validation.pdb

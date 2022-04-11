@@ -1,3 +1,0 @@
-D:\Stratisnew\StratisFullNode\src\Xels.CirrusPegD\obj\Release\netcoreapp3.1\Xels.CirrusPegD.AssemblyInfoInputs.cache
-D:\Stratisnew\StratisFullNode\src\Xels.CirrusPegD\obj\Release\netcoreapp3.1\Xels.CirrusPegD.AssemblyInfo.cs
-D:\Stratisnew\StratisFullNode\src\Xels.CirrusPegD\obj\Release\netcoreapp3.1\Xels.CirrusPegD.csproj.CoreCompileInputs.cache
